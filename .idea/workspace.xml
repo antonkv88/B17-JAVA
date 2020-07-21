@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="" />
+    <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/B17-JAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/B17-JAVA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +60,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -65,15 +78,36 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Gradle.sandbox [run]">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task02.Main" />
+      <module name="B17-JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
+      <module name="B17-JAVA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sandbox [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,8 +146,16 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.sandbox [build]" />
+      <item itemvalue="Gradle.sandbox [run]" />
+      <item itemvalue="Application.MyFirstProgram" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MyFirstProgram" />
         <item itemvalue="Gradle.sandbox [run]" />
         <item itemvalue="Gradle.sandbox [build]" />
       </list>
@@ -129,6 +171,7 @@
       <workItem from="1595279583216" duration="84000" />
       <workItem from="1595279718014" duration="144000" />
       <workItem from="1595279891552" duration="360000" />
+      <workItem from="1595363165737" duration="4264000" />
     </task>
     <servers />
   </component>
@@ -140,33 +183,49 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="432" y="168" key="#Project_Structure/0.0.1680.1020@0.0.1680.1020" timestamp="1595279594056" />
+    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595367276347">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595367276347" />
+    <state x="614" y="312" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595365506182">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="614" y="312" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1020@0.0.1680.1020" timestamp="1595365506182" />
+    <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595367272253">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595367272253" />
     <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1595279847912">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1595279847912" />
-    <state width="1340" height="251" key="GridCell.Tab.0.bottom" timestamp="1595280018946">
+    <state width="1637" height="267" key="GridCell.Tab.0.bottom" timestamp="1595367830156">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1340" height="251" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1595280018946" />
-    <state width="1340" height="251" key="GridCell.Tab.0.center" timestamp="1595280018946">
+    <state width="1637" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830156" />
+    <state width="1637" height="267" key="GridCell.Tab.0.center" timestamp="1595367830155">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1340" height="251" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1595280018946" />
-    <state width="1340" height="251" key="GridCell.Tab.0.left" timestamp="1595280018945">
+    <state width="1637" height="267" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830155" />
+    <state width="1637" height="267" key="GridCell.Tab.0.left" timestamp="1595367830154">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1340" height="251" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1595280018945" />
-    <state width="1340" height="251" key="GridCell.Tab.0.right" timestamp="1595280018946">
+    <state width="1637" height="267" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830154" />
+    <state width="1637" height="267" key="GridCell.Tab.0.right" timestamp="1595367830155">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1340" height="251" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1595280018946" />
-    <state x="320" y="84" key="SettingsEditor" timestamp="1595280376951">
+    <state width="1637" height="267" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830155" />
+    <state x="601" y="124" key="SettingsEditor" timestamp="1595367444273">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="320" y="84" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595280376951" />
-    <state x="536" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1595279891161">
+    <state x="601" y="124" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595367444273" />
+    <state x="536" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1595363165600">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="536" y="333" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595279891161" />
+    <state x="536" y="333" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595363165600" />
+    <state x="222" y="130" key="new project wizard" timestamp="1595365612698">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1595365612698" />
   </component>
 </project>
