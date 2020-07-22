@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/B17-JAVA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/B17-JAVA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/main/java/task02/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/main/java/task02/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,28 +32,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="sandbox" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="sandbox" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -82,82 +62,116 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sandbox/build.gradle" />
+    <property name="nodejs.jest.jest_package" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task02.Main" />
-      <module name="B17-JAVA" />
+  <component name="RunManager" selected="TestNG.Tests">
+    <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task02.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
-      <module name="B17-JAVA" />
+    <configuration name="Tests.distanceFAIL" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
+      <option name="METHOD_NAME" value="distanceFAIL" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sandbox [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="Tests.distanceFAIL02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
+      <option name="METHOD_NAME" value="distanceFAIL02" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="sandbox [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="Tests.distanceOK" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
+      <option name="METHOD_NAME" value="distanceOK" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.distanceOK02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
+      <option name="METHOD_NAME" value="distanceOK02" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.sandbox [build]" />
-      <item itemvalue="Gradle.sandbox [run]" />
-      <item itemvalue="Application.MyFirstProgram" />
+      <item itemvalue="TestNG.Tests.distanceOK" />
+      <item itemvalue="TestNG.Tests.distanceFAIL" />
+      <item itemvalue="TestNG.Tests.distanceOK02" />
+      <item itemvalue="TestNG.Tests.distanceFAIL02" />
+      <item itemvalue="TestNG.Tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MyFirstProgram" />
-        <item itemvalue="Gradle.sandbox [run]" />
-        <item itemvalue="Gradle.sandbox [build]" />
+        <item itemvalue="TestNG.Tests" />
+        <item itemvalue="TestNG.Tests.distanceFAIL02" />
+        <item itemvalue="TestNG.Tests.distanceOK02" />
+        <item itemvalue="TestNG.Tests.distanceFAIL" />
+        <item itemvalue="TestNG.Tests.distanceOK" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +185,8 @@
       <workItem from="1595279583216" duration="84000" />
       <workItem from="1595279718014" duration="144000" />
       <workItem from="1595279891552" duration="360000" />
-      <workItem from="1595363165737" duration="4264000" />
+      <workItem from="1595363165737" duration="4856000" />
+      <workItem from="1595450012758" duration="2365000" />
     </task>
     <servers />
   </component>
@@ -183,10 +198,14 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="432" y="168" key="#Project_Structure/0.0.1680.1020@0.0.1680.1020" timestamp="1595279594056" />
-    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595367276347">
+    <state x="570" y="264" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1595451995533">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595367276347" />
+    <state x="570" y="264" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595451995533" />
+    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595451429985">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595451429985" />
     <state x="614" y="312" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595365506182">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -199,33 +218,33 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1595279847912" />
-    <state width="1637" height="267" key="GridCell.Tab.0.bottom" timestamp="1595367830156">
+    <state width="1637" height="364" key="GridCell.Tab.0.bottom" timestamp="1595452382501">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830156" />
-    <state width="1637" height="267" key="GridCell.Tab.0.center" timestamp="1595367830155">
+    <state width="1637" height="364" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1595452382501" />
+    <state width="1637" height="364" key="GridCell.Tab.0.center" timestamp="1595452382501">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="267" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830155" />
-    <state width="1637" height="267" key="GridCell.Tab.0.left" timestamp="1595367830154">
+    <state width="1637" height="364" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1595452382501" />
+    <state width="1637" height="364" key="GridCell.Tab.0.left" timestamp="1595452382501">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="267" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830154" />
-    <state width="1637" height="267" key="GridCell.Tab.0.right" timestamp="1595367830155">
+    <state width="1637" height="364" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1595452382501" />
+    <state width="1637" height="364" key="GridCell.Tab.0.right" timestamp="1595452382501">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="267" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1595367830155" />
-    <state x="601" y="124" key="SettingsEditor" timestamp="1595367444273">
+    <state width="1637" height="364" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1595452382501" />
+    <state x="601" y="124" key="SettingsEditor" timestamp="1595451388100">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="601" y="124" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595367444273" />
-    <state x="536" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1595363165600">
+    <state x="601" y="124" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595451388100" />
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1595450014382">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="536" y="333" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595363165600" />
-    <state x="222" y="130" key="new project wizard" timestamp="1595365612698">
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595450014382" />
+    <state x="222" y="130" key="new project wizard" timestamp="1595450890033">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1595365612698" />
+    <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1595450890033" />
   </component>
 </project>
