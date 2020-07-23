@@ -3,7 +3,9 @@ package task02;
 public class Main {
   public static void main(String[] args) {
     System.out.println("Расстояние между 2-мя точками (отдельная функция): " + distance(new Point(10,20), new Point (0,0)));
-    System.out.println("Расстояние между 2-мя точками (метод класса point): " + Point.distance(new Point(10,20), new Point (0,0)));
+
+    Point point = new Point(10,20);
+    System.out.println("Расстояние между 2-мя точками (метод класса point): " + point.distance( new Point (0,0)));
   }
 
   public static double distance(Point p1, Point p2) {

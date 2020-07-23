@@ -8,20 +8,24 @@ public class Tests {
 
   @Test
   public void distanceOK01 () {
-    Assert.assertEquals(Point.distance(new Point(10,20), new Point (0,0)),22.360679774997898);
+    Point point = new Point(10,20);
+    Assert.assertEquals(point.distance(new Point (0,0)),22.360679774997898);
   }
   @Test
   public void distanceOK02 () {
-    Assert.assertEquals(Point.distance(new Point(0,0), new Point (10,20)),22.360679774997898);
+    Point point = new Point(0,0);
+    Assert.assertEquals(point.distance(new Point (10,20)),22.360679774997898);
   }
 
   @Test
   public void distanceFAIL01 () {
-    Assert.assertEquals(Point.distance(new Point(10,20), new Point (0,0)),22.36);
+    Point point = new Point(10,20);
+    Assert.assertEquals(point.distance(new Point (0,0)),22.36);
   }
 
   @Test
   public void distanceFAIL02 () {
-    Assert.assertEquals(Point.distance(new Point(0,0), new Point (0,0)),0.1);
+    Point point = new Point(0,0);
+    Assert.assertEquals(point.distance(new Point (0,0)),0.1);
   }
 }
