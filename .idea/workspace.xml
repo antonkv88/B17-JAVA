@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,12 @@
     <property name="project.structure.side.proportion" value="0.20229885" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="TestNG.CreateEntity">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.DeleteGroupTest.testDeleteGroup">
     <configuration name="CreateEntity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -120,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteGroupTest.testDeleteGroup" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +136,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GroupCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteGroupTest" />
+      <option name="METHOD_NAME" value="testDeleteGroup" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -154,8 +162,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
+    <configuration name="GroupCreationTests.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -163,8 +171,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Tests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="tests.GroupCreationTests" />
+      <option name="METHOD_NAME" value="testGroupCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -173,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DeleteGroupTest.testDeleteGroup" />
+        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
+        <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
         <item itemvalue="TestNG.CreateEntity" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
-        <item itemvalue="TestNG.GroupCreationTests (1)" />
-        <item itemvalue="TestNG.Tests" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +205,7 @@
       <workItem from="1595494858703" duration="363000" />
       <workItem from="1595793612934" duration="2192000" />
       <workItem from="1595881799229" duration="5398000" />
-      <workItem from="1596048594351" duration="5072000" />
+      <workItem from="1596048594351" duration="7051000" />
     </task>
     <servers />
   </component>
@@ -224,26 +233,30 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595794956072" />
+    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1596063888691">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596063888691" />
     <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1596049717321">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="180" key="GridCell.Tab.0.bottom" timestamp="1596053238131">
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom" timestamp="1596064022698">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596053238131" />
-    <state width="1637" height="180" key="GridCell.Tab.0.center" timestamp="1596053238131">
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596064022698" />
+    <state width="1637" height="180" key="GridCell.Tab.0.center" timestamp="1596064022698">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596053238131" />
-    <state width="1637" height="180" key="GridCell.Tab.0.left" timestamp="1596053238131">
+    <state width="1637" height="180" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596064022698" />
+    <state width="1637" height="180" key="GridCell.Tab.0.left" timestamp="1596064022698">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596053238131" />
-    <state width="1637" height="180" key="GridCell.Tab.0.right" timestamp="1596053238131">
+    <state width="1637" height="180" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596064022698" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right" timestamp="1596064022698">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596053238131" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596064022698" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -264,10 +277,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596048631441" />
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596052601373">
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596063842831">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596052601373" />
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596063842831" />
     <state x="222" y="130" key="new project wizard" timestamp="1596049674113">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
