@@ -13,9 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 public class CreateEntity {
   private WebDriver wd;
-  private String baseUrl;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
