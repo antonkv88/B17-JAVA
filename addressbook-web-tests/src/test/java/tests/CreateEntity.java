@@ -33,8 +33,8 @@ public class CreateEntity {
     fillTitle( "title");
     fillCompany("company");
     fillAddess("address");
-    fillTelephoneNumber("222666", "8999999333222", "666222", "2332");
-    fillEmails("test1@mail.ru", "test2@gmail.com", "test3@test.ru");
+    fillTelephoneNumber(new TelephoneNumbers("222666", "8999999333222", "666222", "2332"));
+    fillEmails(new Emails("test1@mail.ru", "test2@gmail.com", "test3@test.ru"));
     finishAddNewEntity();
   }
 
@@ -92,17 +92,17 @@ private void fillNames(String firstname,String lastname) {
   fillTextField("lastname", lastname);
 }
 
-private void fillEmails(String email1, String email2, String email3) {
-  fillTextField("email" , email1);
-  fillTextField("email2", email2);
-  fillTextField("email3", email3);
+private void fillEmails(Emails emails) {
+  fillTextField("email" , emails.getEmail1());
+  fillTextField("email2", emails.getEmail2());
+  fillTextField("email3", emails.getEmail3());
 }
 
-private void fillTelephoneNumber(String home, String mobile, String work, String fax) {
-  fillTextField("home", home);
-  fillTextField("mobile", mobile);
-  fillTextField("work", work);
-  fillTextField("fax", fax);
+private void fillTelephoneNumber(TelephoneNumbers telephoneNumbers) {
+  fillTextField("home", telephoneNumbers.getHome());
+  fillTextField("mobile", telephoneNumbers.getMobile());
+  fillTextField("work", telephoneNumbers.getWork());
+  fillTextField("fax", telephoneNumbers.getFax());
 }
 
 private boolean isElementPresent(By by) {
