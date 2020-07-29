@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -84,33 +84,41 @@
     <property name="project.structure.side.proportion" value="0.20229885" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests (1)">
-    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
-      <module name="sandbox.main" />
+  <component name="RunManager" selected="TestNG.CreateEntity">
+    <configuration name="CreateEntity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateEntity" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.Tests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="CreateEntity.CreateEntityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateEntity" />
+      <option name="METHOD_NAME" value="CreateEntityTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreationTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
@@ -165,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateEntity" />
+        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
         <item itemvalue="TestNG.GroupCreationTests (1)" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.Tests" />
-        <item itemvalue="Gradle.Tests" />
-        <item itemvalue="Application.MyFirstProgram" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +195,8 @@
       <workItem from="1595450012758" duration="2365000" />
       <workItem from="1595494858703" duration="363000" />
       <workItem from="1595793612934" duration="2192000" />
-      <workItem from="1595881799229" duration="5190000" />
+      <workItem from="1595881799229" duration="5398000" />
+      <workItem from="1596048594351" duration="3988000" />
     </task>
     <servers />
   </component>
@@ -215,26 +224,26 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595794956072" />
-    <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1595795246460">
+    <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1596049717321">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1595795246460" />
-    <state width="1637" height="107" key="GridCell.Tab.0.bottom" timestamp="1595886923420">
+    <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom" timestamp="1596052810624">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="107" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1595886923420" />
-    <state width="1637" height="107" key="GridCell.Tab.0.center" timestamp="1595886923420">
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596052810624" />
+    <state width="1637" height="180" key="GridCell.Tab.0.center" timestamp="1596052810624">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="107" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1595886923420" />
-    <state width="1637" height="107" key="GridCell.Tab.0.left" timestamp="1595886923420">
+    <state width="1637" height="180" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596052810624" />
+    <state width="1637" height="180" key="GridCell.Tab.0.left" timestamp="1596052810624">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="107" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1595886923420" />
-    <state width="1637" height="107" key="GridCell.Tab.0.right" timestamp="1595886923420">
+    <state width="1637" height="180" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596052810624" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right" timestamp="1596052810624">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="107" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1595886923420" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596052810624" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -243,25 +252,25 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="566" y="153" key="RefactorJ.IntroduceParameterObject/0.0.1680.1020@0.0.1680.1020" timestamp="1595887460591" />
-    <state x="655" y="443" key="ReplaceDuplicatesPrompt" timestamp="1595886636242">
+    <state x="655" y="443" key="ReplaceDuplicatesPrompt" timestamp="1596050367368">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="655" y="443" key="ReplaceDuplicatesPrompt/0.0.1680.1020@0.0.1680.1020" timestamp="1595886636242" />
+    <state x="655" y="443" key="ReplaceDuplicatesPrompt/0.0.1680.1020@0.0.1680.1020" timestamp="1596050367368" />
     <state x="601" y="124" width="1035" height="852" key="SettingsEditor" timestamp="1595884474486">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="601" y="124" width="1035" height="852" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595884474486" />
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1595881800711">
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596048631441">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595881800711" />
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1595886767398">
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596048631441" />
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596052601373">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595886767398" />
-    <state x="222" y="130" key="new project wizard" timestamp="1595450890033">
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596052601373" />
+    <state x="222" y="130" key="new project wizard" timestamp="1596049674113">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1595450890033" />
+    <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1596049674113" />
   </component>
 </project>
