@@ -1,8 +1,5 @@
 package appmanager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
@@ -22,11 +19,11 @@ public void init() {
   sessionHelper = new SessionHelper(wd);
   wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   wd.get("http://localhost/addressbook/");
-  sessionHelper.login("admin", "secret");
+  getSessionHelper().login("admin", "secret");
 }
 
 public void stop() {
-  sessionHelper.logout();
+  getSessionHelper().logout();
   wd.quit();
 }
 
@@ -44,24 +41,6 @@ public NavigationHelper getNavigationHelper() {
 
 public SessionHelper getSessionHelper() {
   return sessionHelper;
-}
-
-public boolean isAlertPresent() {
-  try {
-    wd.switchTo().alert();
-    return true;
-  } catch (NoAlertPresentException e) {
-    return false;
-  }
-}
-
-public boolean isElementPresent(By by) {
-  try {
-    wd.findElement(by);
-    return true;
-  } catch (NoSuchElementException e) {
-    return false;
-  }
 }
 
 }

@@ -4,7 +4,7 @@ import appmanager.Emails;
 import appmanager.TelephoneNumbers;
 import org.testng.annotations.Test;
 
-public class CreateEntity extends TestBase {
+public class CreateEntityTest extends TestBase {
 
   @Test
   public void CreateEntityTest() throws Exception {

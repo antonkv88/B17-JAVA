@@ -4,25 +4,18 @@ import model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GroupHelper {
-private WebDriver wd;
+public class GroupHelper extends HelperBase {
 
 public GroupHelper(WebDriver wd) {
-  this.wd = wd;
+  super(wd);
 }
 
 public void submitGroupCreation() {
-  wd.findElement(By.name("submit")).click();
+  click(By.name("submit"));
 }
 
 public void initGroupCreation() {
-  wd.findElement(By.name("new")).click();
-}
-
-private void fillTextField(String fieldName, String fieldValue) {
-  wd.findElement(By.name(fieldName)).click();
-  wd.findElement(By.name(fieldName)).clear();
-  wd.findElement(By.name(fieldName)).sendKeys(fieldValue);
+  click(By.name("new"));
 }
 
 public void fillGroupCreation(GroupData groupData) {
@@ -32,15 +25,15 @@ public void fillGroupCreation(GroupData groupData) {
 }
 
 public void returnGroupPage() {
-  wd.findElement(By.linkText("group page")).click();
+  click(By.linkText("group page"));
 }
 
 public void deleteSelectedGroup() {
-  wd.findElement(By.name("delete")).click();
+  click(By.name("delete"));
 }
 
 public void selectGroup() {
-  wd.findElement(By.name("selected[]")).click();
+  click(By.name("selected[]"));
 }
 
 

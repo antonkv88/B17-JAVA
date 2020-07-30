@@ -3,26 +3,19 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SessionHelper {
-private WebDriver wd;
+public class SessionHelper extends HelperBase {
 
 public SessionHelper(WebDriver wd) {
-  this.wd = wd;
-}
-
-private void fillTextField(String fieldName, String fieldValue) {
-  wd.findElement(By.name(fieldName)).click();
-  wd.findElement(By.name(fieldName)).clear();
-  wd.findElement(By.name(fieldName)).sendKeys(fieldValue);
+  super(wd);
 }
 
 protected void login(String username, String password) {
   fillTextField("user", username);
   fillTextField("pass", password);
-  wd.findElement(By.xpath("//input[@value='Login']")).click();
+  click(By.xpath("//input[@value='Login']"));
 }
 
 protected void logout() {
-  wd.findElement(By.linkText("Logout")).click();
+  click(By.linkText("Logout"));
 }
 }

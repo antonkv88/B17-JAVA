@@ -3,21 +3,14 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class EntityHelper {
-private WebDriver wd;
+public class EntityHelper extends HelperBase{
 
 public EntityHelper(WebDriver wd) {
-  this.wd = wd;
-}
-
-private void fillTextField(String fieldName, String fieldValue) {
-  wd.findElement(By.name(fieldName)).click();
-  wd.findElement(By.name(fieldName)).clear();
-  wd.findElement(By.name(fieldName)).sendKeys(fieldValue);
+  super(wd);
 }
 
 public void finishAddNewEntity() {
-  wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
+  click(By.xpath("(//input[@name='submit'])[2]"));
 }
 
 public void fillNickname(String fieldValue) {
