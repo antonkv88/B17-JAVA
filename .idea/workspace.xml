@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/Emails.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/Emails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TelephoneNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/TelephoneNumbers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +95,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="appmanager" />
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteGroupTest.testDeleteGroup">
+  <component name="RunManager" selected="TestNG.GroupCreationTests.testGroupCreation">
     <configuration name="CreateEntity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -188,9 +190,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteGroupTest.testDeleteGroup" />
-        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
+        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
+        <item itemvalue="TestNG.DeleteGroupTest.testDeleteGroup" />
         <item itemvalue="TestNG.CreateEntity" />
         <item itemvalue="TestNG.GroupCreationTests" />
       </list>
@@ -212,7 +214,7 @@
       <workItem from="1595793612934" duration="2192000" />
       <workItem from="1595881799229" duration="5398000" />
       <workItem from="1596048594351" duration="7197000" />
-      <workItem from="1596138150287" duration="1187000" />
+      <workItem from="1596138150287" duration="4399000" />
     </task>
     <servers />
   </component>
@@ -240,30 +242,30 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595794956072" />
-    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1596138546752">
+    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1596142300326">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596138546752" />
+    <state x="859" y="192" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596142300326" />
     <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1596049717321">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="180" key="GridCell.Tab.0.bottom" timestamp="1596139327140">
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom" timestamp="1596142778291">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596139327140" />
-    <state width="1637" height="180" key="GridCell.Tab.0.center" timestamp="1596139327139">
+    <state width="1637" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596142778291" />
+    <state width="1637" height="180" key="GridCell.Tab.0.center" timestamp="1596142778291">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596139327139" />
-    <state width="1637" height="180" key="GridCell.Tab.0.left" timestamp="1596139327139">
+    <state width="1637" height="180" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596142778291" />
+    <state width="1637" height="180" key="GridCell.Tab.0.left" timestamp="1596142778291">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596139327139" />
-    <state width="1637" height="180" key="GridCell.Tab.0.right" timestamp="1596139327139">
+    <state width="1637" height="180" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596142778291" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right" timestamp="1596142778291">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="180" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596139327139" />
+    <state width="1637" height="180" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596142778291" />
     <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596139245632">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>

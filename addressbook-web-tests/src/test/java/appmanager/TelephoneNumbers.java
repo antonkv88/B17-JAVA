@@ -1,4 +1,4 @@
-package tests;
+package appmanager;
 
 public class TelephoneNumbers {
 private final String home;

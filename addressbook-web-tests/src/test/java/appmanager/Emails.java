@@ -1,4 +1,4 @@
-package tests;
+package appmanager;
 
 public class Emails {
 private final String email1;
