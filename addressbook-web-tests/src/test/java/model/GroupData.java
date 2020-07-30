@@ -1,4 +1,4 @@
-package tests;
+package model;
 
 public class GroupData {
 private final String name;

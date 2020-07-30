@@ -1,15 +1,16 @@
 package tests;
 
+import model.GroupData;
 import org.testng.annotations.Test;
 
 public class GroupCreationTests extends TestBase {
 
 @Test
   public void testGroupCreation() throws Exception {
-  gotoGroupPage();
-  initGroupCreation();
-  fillGroupCreation(new GroupData("test1", "test2", "test3"));
-  submitGroupCreation();
+  app.gotoGroupPage();
+  app.initGroupCreation();
+  app.fillGroupCreation(new GroupData("test1", "test2", "test3"));
+  app.submitGroupCreation();
 }
 
 }
