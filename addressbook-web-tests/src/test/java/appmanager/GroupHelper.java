@@ -37,4 +37,11 @@ public void selectGroup() {
 }
 
 
+public void initGroupModify() {
+  click(By.name("edit"));
+}
+
+public void submitGroupModify() {
+  click(By.name("update"));
+}
 }

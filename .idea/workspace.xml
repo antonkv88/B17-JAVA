@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/EntityHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/EntityHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/SessionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateEntityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupCreationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.ModifyGroupTest.testModifyGroup">
     <configuration name="CreateEntity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -112,24 +106,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CreateEntity" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateEntity.CreateEntityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="appmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateEntity" />
-      <option name="METHOD_NAME" value="CreateEntityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -188,13 +164,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModifyGroupTest.testModifyGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ModifyGroupTest" />
+      <option name="METHOD_NAME" value="testModifyGroup" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ModifyGroupTest.testModifyGroup" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.DeleteGroupTest" />
         <item itemvalue="TestNG.CreateEntity" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.CreateEntity.CreateEntityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +208,8 @@
       <workItem from="1595793612934" duration="2192000" />
       <workItem from="1595881799229" duration="5398000" />
       <workItem from="1596048594351" duration="7197000" />
-      <workItem from="1596138150287" duration="7060000" />
+      <workItem from="1596138150287" duration="7363000" />
+      <workItem from="1596230579323" duration="862000" />
     </task>
     <servers />
   </component>
@@ -254,38 +249,38 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="448" key="GridCell.Tab.0.bottom" timestamp="1596144960095">
+    <state width="1637" height="202" key="GridCell.Tab.0.bottom" timestamp="1596231484811">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="448" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596144960095" />
-    <state width="1637" height="448" key="GridCell.Tab.0.center" timestamp="1596144960095">
+    <state width="1637" height="202" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596231484811" />
+    <state width="1637" height="202" key="GridCell.Tab.0.center" timestamp="1596231484811">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="448" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596144960095" />
-    <state width="1637" height="448" key="GridCell.Tab.0.left" timestamp="1596144960095">
+    <state width="1637" height="202" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596231484811" />
+    <state width="1637" height="202" key="GridCell.Tab.0.left" timestamp="1596231484811">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="448" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596144960095" />
-    <state width="1637" height="448" key="GridCell.Tab.0.right" timestamp="1596144960095">
+    <state width="1637" height="202" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596231484811" />
+    <state width="1637" height="202" key="GridCell.Tab.0.right" timestamp="1596231484811">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="448" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596144960095" />
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596139245632">
+    <state width="1637" height="202" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596231484811" />
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596145541931">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596139245632" />
-    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596139245632">
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596145541931" />
+    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596145541931">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596139245632" />
-    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596139245632">
+    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596145541931" />
+    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596145541931">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596139245632" />
-    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596139245632">
+    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596145541931" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596145541931">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596139245632" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596145541931" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -302,10 +297,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="601" y="124" width="1035" height="852" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595884474486" />
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596138149235">
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596230578189">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596138149235" />
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596230578189" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596143319740">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
