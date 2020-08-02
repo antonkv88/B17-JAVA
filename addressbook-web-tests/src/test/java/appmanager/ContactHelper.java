@@ -1,11 +1,12 @@
 package appmanager;
 
+import model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class EntityHelper extends HelperBase{
+public class ContactHelper extends HelperBase{
 
-public EntityHelper(WebDriver wd) {
+public ContactHelper(WebDriver wd) {
   super(wd);
 }
 
@@ -33,17 +34,14 @@ public void fillNames(String firstname, String lastname) {
   fillTextField("firstname", firstname);
   fillTextField("lastname", lastname);
 }
-
-public void fillEmails(Emails emails) {
-  fillTextField("email", emails.getEmail1());
-  fillTextField("email2", emails.getEmail2());
-  fillTextField("email3", emails.getEmail3());
+public void fillContacts(ContactData contactData) {
+  fillTextField("home", contactData.getHome());
+  fillTextField("mobile", contactData.getMobile());
+  fillTextField("work", contactData.getWork());
+  fillTextField("fax", contactData.getFax());
+  fillTextField("email", contactData.getEmail1());
+  fillTextField("email2", contactData.getEmail2());
+  fillTextField("email3", contactData.getEmail3());
 }
 
-public void fillTelephoneNumber(TelephoneNumbers telephoneNumbers) {
-  fillTextField("home", telephoneNumbers.getHome());
-  fillTextField("mobile", telephoneNumbers.getMobile());
-  fillTextField("work", telephoneNumbers.getWork());
-  fillTextField("fax", telephoneNumbers.getFax());
-}
 }

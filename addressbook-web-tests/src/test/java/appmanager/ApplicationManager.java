@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-private EntityHelper entityHelper;
+private ContactHelper contactHelper;
 private GroupHelper groupHelper;
 private NavigationHelper navigationHelper;
 private SessionHelper sessionHelper;
@@ -14,7 +14,7 @@ WebDriver wd;
 public void init() {
   wd = new ChromeDriver();
   groupHelper = new GroupHelper(wd);
-  entityHelper = new EntityHelper(wd);
+  contactHelper = new ContactHelper(wd);
   navigationHelper = new NavigationHelper(wd);
   sessionHelper = new SessionHelper(wd);
   wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -31,8 +31,8 @@ public GroupHelper getGroupHelper() {
   return groupHelper;
 }
 
-public EntityHelper getEntityHelper() {
-  return entityHelper;
+public ContactHelper getContactHelperHelper() {
+  return contactHelper;
 }
 
 public NavigationHelper getNavigationHelper() {
