@@ -12,7 +12,7 @@ public void testModifyGroup(){
     app.getGroupHelper().initGroupModify();
     app.getGroupHelper().fillGroupCreation(new GroupData("modify1", "modify2", "modify3"));
     app.getGroupHelper().submitGroupModify();
-    app.getGroupHelper().returnGroupPage();
+    app.getNavigationHelper().returnGroupPage();
   }
 
 }

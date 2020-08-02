@@ -14,7 +14,7 @@ protected void setUp() throws Exception {
 }
 
 @AfterMethod(alwaysRun = true)
-  public void tearDown() throws Exception {
+protected void tearDown() throws Exception {
   app.stop();
 }
 

@@ -27,11 +27,15 @@ public void stop() {
   wd.quit();
 }
 
+public void closeAlert(){
+  wd.switchTo().alert().accept();
+}
+
 public GroupHelper getGroupHelper() {
   return groupHelper;
 }
 
-public ContactHelper getContactHelperHelper() {
+public ContactHelper getContactHelper() {
   return contactHelper;
 }
 

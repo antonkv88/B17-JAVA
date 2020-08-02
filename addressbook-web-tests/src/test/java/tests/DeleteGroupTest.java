@@ -9,7 +9,7 @@ public void testDeleteGroup() throws Exception {
   app.getNavigationHelper().gotoGroupPage();
   app.getGroupHelper().selectGroup();
   app.getGroupHelper().deleteSelectedGroup();
-  app.getGroupHelper().returnGroupPage();
+  app.getNavigationHelper().returnGroupPage();
 }
 
 }

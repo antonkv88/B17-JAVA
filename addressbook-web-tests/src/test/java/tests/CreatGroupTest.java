@@ -3,7 +3,7 @@ package tests;
 import model.GroupData;
 import org.testng.annotations.Test;
 
-public class GroupCreationTest extends TestBase {
+public class CreatGroupTest extends TestBase {
 
 @Test
   public void testGroupCreation() throws Exception {

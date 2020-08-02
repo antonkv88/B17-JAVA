@@ -30,6 +30,20 @@ public void fillAddess(String fieldValue) {
   fillTextField("address", fieldValue);
 }
 
+public void selectContact(String number) {
+  click(By.id(number));
+}
+
+public void delSelectedContract(){
+  click(By.xpath("//input[@value='Delete']"));
+}
+public void modifySelectedContract(){
+  click(By.xpath("(//img[@alt='Edit'])[3]"));
+}
+public void submitModifyContact(){
+  click(By.xpath("(//input[@name='update'])[2]"));
+}
+
 public void fillNames(String firstname, String lastname) {
   fillTextField("firstname", firstname);
   fillTextField("lastname", lastname);
