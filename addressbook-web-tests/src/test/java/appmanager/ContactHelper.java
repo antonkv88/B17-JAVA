@@ -30,8 +30,8 @@ public void fillAddess(String fieldValue) {
   fillTextField("address", fieldValue);
 }
 
-public void selectContact(String number) {
-  click(By.id(number));
+public void selectContact() {
+  click(By.id("1"));
 }
 
 public void delSelectedContract(){
