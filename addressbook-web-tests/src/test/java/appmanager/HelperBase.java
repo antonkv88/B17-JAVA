@@ -18,8 +18,13 @@ protected void click(By name) {
 
 protected void fillTextField(String fieldName, String fieldValue) {
   click(By.name(fieldName));
-  wd.findElement(By.name(fieldName)).clear();
-  wd.findElement(By.name(fieldName)).sendKeys(fieldValue);
+  if (fieldValue != null) {
+    String text = wd.findElement(By.name(fieldName)).getAttribute("value");
+    if (!fieldValue.equals(text)){
+      wd.findElement(By.name(fieldName)).clear();
+      wd.findElement(By.name(fieldName)).sendKeys(fieldValue);
+    }
+  }
 }
 
 public boolean isAlertPresent() {

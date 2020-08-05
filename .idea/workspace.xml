@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/HelperBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,8 @@
       <workItem from="1596486077205" duration="2446000" />
       <workItem from="1596488927064" duration="1852000" />
       <workItem from="1596579430058" duration="698000" />
-      <workItem from="1596654097885" duration="6221000" />
+      <workItem from="1596654097885" duration="7152000" />
+      <workItem from="1596666467356" duration="809000" />
     </task>
     <servers />
   </component>
@@ -341,10 +340,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="601" y="124" width="1035" height="852" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595884474486" />
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596654137114">
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596666466377">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596654137114" />
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596666466377" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596143319740">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
