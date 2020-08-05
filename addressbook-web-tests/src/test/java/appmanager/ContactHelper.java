@@ -14,15 +14,15 @@ public void finishAddNewEntity() {
   click(By.xpath("(//input[@name='submit'])[2]"));
 }
 
-public void selectContact() {
-  click(By.id("1"));
+public void selectFirstContact() {
+  click(By.name("selected[]"));
 }
 
 public void delSelectedContract(){
   click(By.xpath("//input[@value='Delete']"));
 }
-public void modifySelectedContract(){
-  click(By.xpath("(//img[@alt='Edit'])[3]"));
+public void modifyFirstContract(){
+  click(By.xpath("//img[@alt='Edit']"));
 }
 public void submitModifyContact(){
   click(By.xpath("(//input[@name='update'])[2]"));

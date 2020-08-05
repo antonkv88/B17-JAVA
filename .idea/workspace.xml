@@ -4,8 +4,7 @@
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +96,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateContactTest.createContactTest">
+  <component name="RunManager" selected="TestNG.DeleteContactTest.testDeleteContact">
     <configuration name="CreatGroupTest.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -203,10 +202,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
-        <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
-        <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="TestNG.DeleteContactTest.testDeleteContact" />
+        <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
+        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
+        <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="TestNG.tests" />
       </list>
     </recent_temporary>
@@ -233,7 +232,7 @@
       <workItem from="1596486077205" duration="2446000" />
       <workItem from="1596488927064" duration="1852000" />
       <workItem from="1596579430058" duration="698000" />
-      <workItem from="1596654097885" duration="3777000" />
+      <workItem from="1596654097885" duration="6221000" />
     </task>
     <servers />
   </component>
@@ -294,38 +293,38 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="365" key="GridCell.Tab.0.bottom" timestamp="1596658051132">
+    <state width="1637" height="143" key="GridCell.Tab.0.bottom" timestamp="1596660416200">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="365" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596658051132" />
-    <state width="1637" height="365" key="GridCell.Tab.0.center" timestamp="1596658051132">
+    <state width="1637" height="143" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
+    <state width="1637" height="143" key="GridCell.Tab.0.center" timestamp="1596660416200">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="365" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596658051132" />
-    <state width="1637" height="365" key="GridCell.Tab.0.left" timestamp="1596658051132">
+    <state width="1637" height="143" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
+    <state width="1637" height="143" key="GridCell.Tab.0.left" timestamp="1596660416200">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="365" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596658051132" />
-    <state width="1637" height="365" key="GridCell.Tab.0.right" timestamp="1596658051132">
+    <state width="1637" height="143" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
+    <state width="1637" height="143" key="GridCell.Tab.0.right" timestamp="1596660416200">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="365" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596658051132" />
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596406183783">
+    <state width="1637" height="143" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596659528754">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596406183783" />
-    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596406183783">
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
+    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596659528754">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596406183783" />
-    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596406183783">
+    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
+    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596659528754">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596406183783" />
-    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596406183783">
+    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596659528754">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596406183783" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -354,5 +353,16 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="222" y="130" key="new project wizard/0.0.1680.1020@0.0.1680.1020" timestamp="1596049674113" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
