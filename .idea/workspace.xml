@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +100,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteContactTest.testDeleteContact">
+  <component name="RunManager" selected="TestNG.ModifyContactTest.testModifyContact">
     <configuration name="CreatGroupTest.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -200,9 +206,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteContactTest.testDeleteContact" />
         <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
         <item itemvalue="TestNG.CreateContactTest.createContactTest" />
+        <item itemvalue="TestNG.DeleteContactTest.testDeleteContact" />
         <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="TestNG.tests" />
       </list>
@@ -231,7 +237,8 @@
       <workItem from="1596488927064" duration="1852000" />
       <workItem from="1596579430058" duration="698000" />
       <workItem from="1596654097885" duration="7152000" />
-      <workItem from="1596666467356" duration="809000" />
+      <workItem from="1596666467356" duration="890000" />
+      <workItem from="1596831210284" duration="3465000" />
     </task>
     <servers />
   </component>
@@ -288,42 +295,46 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="570" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596391640605" />
+    <state x="100" y="212" width="1486" height="595" key="#xdebugger.evaluate" timestamp="1596834039303">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="100" y="212" width="1486" height="595" key="#xdebugger.evaluate/0.0.1680.1020@0.0.1680.1020" timestamp="1596834039303" />
     <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1596049717321">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="143" key="GridCell.Tab.0.bottom" timestamp="1596660416200">
+    <state width="1637" height="330" key="GridCell.Tab.0.bottom" timestamp="1596834679706">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="143" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
-    <state width="1637" height="143" key="GridCell.Tab.0.center" timestamp="1596660416200">
+    <state width="1637" height="330" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679706" />
+    <state width="1637" height="330" key="GridCell.Tab.0.center" timestamp="1596834679706">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="143" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
-    <state width="1637" height="143" key="GridCell.Tab.0.left" timestamp="1596660416200">
+    <state width="1637" height="330" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679706" />
+    <state width="1637" height="330" key="GridCell.Tab.0.left" timestamp="1596834679706">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="143" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
-    <state width="1637" height="143" key="GridCell.Tab.0.right" timestamp="1596660416200">
+    <state width="1637" height="330" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679706" />
+    <state width="1637" height="330" key="GridCell.Tab.0.right" timestamp="1596834679706">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="143" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596660416200" />
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596659528754">
+    <state width="1637" height="330" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679706" />
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom" timestamp="1596834679707">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
-    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596659528754">
+    <state width="1637" height="330" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679707" />
+    <state width="1637" height="330" key="GridCell.Tab.1.center" timestamp="1596834679707">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
-    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596659528754">
+    <state width="1637" height="330" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679707" />
+    <state width="1637" height="330" key="GridCell.Tab.1.left" timestamp="1596834679707">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
-    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596659528754">
+    <state width="1637" height="330" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679707" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right" timestamp="1596834679707">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596659528754" />
+    <state width="1637" height="330" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1596834679707" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -340,10 +351,14 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="601" y="124" width="1035" height="852" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1595884474486" />
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596666466377">
+    <state width="848" height="518" key="XDebugger.FullValuePopup" timestamp="1596834039219">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596666466377" />
+    <state width="848" height="518" key="XDebugger.FullValuePopup/0.0.1680.1020@0.0.1680.1020" timestamp="1596834039218" />
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1596831209722">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="340" y="199" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596831209722" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596143319740">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -358,8 +373,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
+          <line>50</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

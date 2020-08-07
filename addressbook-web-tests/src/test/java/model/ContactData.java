@@ -14,6 +14,11 @@ private String nickname;
 private String title;
 private String company;
 private String address;
+private String group;
+
+private void fillGroup (String group) {
+this.group = group;
+}
 
 private void fillNickname(String nickname) {
   this.nickname = nickname;
@@ -49,7 +54,7 @@ private void fillTelephoneNumbers(String home, String mobile, String work, Strin
   this.fax = fax;
 }
 
-public ContactData(String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3) {
+public ContactData(String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3, String group) {
   fillTelephoneNumbers(home, mobile, work, fax);
   fillEmails(email1, email2, email3);
   fillNames(firstname,lastname);
@@ -57,6 +62,7 @@ public ContactData(String firstname, String lastname, String nickname, String ti
   fillTitle(title);
   fillCompany(company);
   fillAddess(address);
+  fillGroup(group);
 }
 
 public String getEmail1() {
@@ -99,4 +105,7 @@ public String getAddress() {
   return address;
 }
 
+public String getGroup() {
+  return group;
+}
 }
