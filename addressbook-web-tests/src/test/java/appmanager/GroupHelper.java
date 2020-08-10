@@ -37,6 +37,15 @@ public void submitGroupModify() {
 }
 
 
+public boolean isThereAGroup() {
+  return isElementPresent(By.name("selected[]"));
+}
+
+public void createGroup(GroupData group) {
+  initGroupCreation();
+  fillGroupCreation(group);
+  submitGroupCreation();
+}
 
 
 }

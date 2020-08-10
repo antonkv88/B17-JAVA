@@ -53,10 +53,14 @@ public void fillContacts(ContactData contactData, boolean creation) {
   } else {
     Assert.assertFalse(isElementPresent(By.name("new_group")));
   }
-
-
 }
 
+public boolean isThereAContact() {
+  return isElementPresent(By.name("selected[]"));
+}
 
-
+public void createContact(ContactData contact) {
+  fillContacts(contact,true);
+  finishAddNewEntity();
+}
 }

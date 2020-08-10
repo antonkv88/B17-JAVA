@@ -10,7 +10,14 @@ public NavigationHelper(WebDriver wd) {
 }
 
 public void gotoGroupPage() {
-  click(By.linkText("groups"));
+  if (isElementPresent(By.tagName("h1"))
+          && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+          && isElementPresent(By.name("new"))) {
+    return;
+  } else {
+    click(By.linkText("groups"));
+  }
+
 }
 public void gotoAddNewContact() {
   click(By.linkText("add new"));
@@ -19,6 +26,11 @@ public void returnGroupPage() {
   click(By.linkText("group page"));
 }
 public void returnHomePage() {
-  click(By.linkText("home page"));
+  if (isElementPresent(By.id("maintable"))){
+    return;
+  } else {
+    click(By.linkText("home page"));
+  }
+
 }
 }
