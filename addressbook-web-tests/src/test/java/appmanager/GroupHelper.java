@@ -19,8 +19,8 @@ public void fillGroupCreation(GroupData groupData) {
 public void deleteSelectedGroup() {
   click(By.name("delete"));
 }
-public void selectGroup() {
-  click(By.name("selected[]"));
+public void selectGroup(int index) {
+  wd.findElements(By.name("selected[]")).get(index).click();
 }
 public void submitGroupCreation() {
   click(By.name("submit"));

@@ -13,7 +13,7 @@ public void testModifyGroup(){
     if (! app.getGroupHelper().isThereAGroup()) {
       app.getGroupHelper().createGroup(new GroupData("test1", "test2", "test3"));
     }
-    app.getGroupHelper().selectGroup();
+    app.getGroupHelper().selectGroup(before -1);
     app.getGroupHelper().initGroupModify();
     app.getGroupHelper().fillGroupCreation(new GroupData("modify1", "modify2", "modify3"));
     app.getGroupHelper().submitGroupModify();
