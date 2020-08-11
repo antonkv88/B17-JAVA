@@ -25,7 +25,6 @@ public void selectGroup() {
 public void submitGroupCreation() {
   click(By.name("submit"));
 }
-
 public void initGroupCreation() {
   click(By.name("new"));
 }
@@ -35,7 +34,6 @@ public void initGroupModify() {
 public void submitGroupModify() {
   click(By.name("update"));
 }
-
 
 public boolean isThereAGroup() {
   return isElementPresent(By.name("selected[]"));
@@ -47,5 +45,8 @@ public void createGroup(GroupData group) {
   submitGroupCreation();
 }
 
+public int getGroupCount() {
+  return wd.findElements(By.name("selected[]")).size();
+}
 
 }
