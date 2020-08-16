@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class ContactData {
 private String firstname;
 private String lastname;
@@ -15,6 +17,24 @@ private String title;
 private String company;
 private String address;
 private String group;
+
+public ContactData(String firstname, String lastname) {
+  this(firstname,lastname,null,null,null,null,null,null,null,null,null,null,null,null);
+}
+
+@Override
+public boolean equals(Object o) {
+  if (this == o) return true;
+  if (o == null || getClass() != o.getClass()) return false;
+  ContactData that = (ContactData) o;
+  return Objects.equals(firstname, that.firstname) &&
+          Objects.equals(lastname, that.lastname);
+}
+
+@Override
+public int hashCode() {
+  return Objects.hash(firstname, lastname);
+}
 
 private void fillGroup (String group) {
 this.group = group;

@@ -63,6 +63,6 @@ public List<GroupData> getGroupList() {
     groups.add(group);
   }
   return groups;
-
 }
+
 }
