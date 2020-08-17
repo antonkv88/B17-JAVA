@@ -1,7 +1,11 @@
 package tests;
 
 import model.ContactData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Comparator;
+import java.util.List;
 
 public class ModifyContactTest extends TestBase {
 
@@ -16,13 +20,24 @@ public class ModifyContactTest extends TestBase {
    app.getContactHelper().createContact(contactData);
    app.getNavigationHelper().returnHomePage();
   }
+  List<ContactData> before = app.getContactHelper().getContactList();
   app.getContactHelper().modifyFirstContract();
-  contact = new ContactData("modify", "modify2", "modify_nick","modify_title",
+  contact = new ContactData(before.get(0).getId(),"modify", "modify2", "modify_nick","modify_title",
           "modify_company","modify_address" ,"0000000", "111111111111",
           "123123", "9999999","modify1@mail.ru", "modify2@gmail.com", "modify3@test.ru", null);
   app.getContactHelper().fillContacts(contact, false);
   app.getContactHelper().submitModifyContact();
   app.getNavigationHelper().returnHomePage();
+  List<ContactData> after = app.getContactHelper().getContactList();
+  Assert.assertEquals(after.size(), before.size());
+
+  before.remove(0);
+  before.add(contact);
+
+  Comparator<? super ContactData> ById = (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+  before.sort(ById);
+  after.sort(ById);
+  Assert.assertEquals(before, after);
 }
 
 }

@@ -76,9 +76,10 @@ public List<ContactData> getContactList() {
   for (WebElement row : rows){
     List<WebElement> columns = row.findElements(By.tagName("td"));
     if (columns.size() == 0) continue; //пропускаю заголовок
+    int id = Integer.parseInt(columns.get(0).findElement(By.tagName("input")).getAttribute("value"));
     lastname = columns.get(1).getText();
     firstname = columns.get(2).getText();
-    ContactData contact = new ContactData(firstname, lastname);
+    ContactData contact = new ContactData(id, firstname, lastname);
     contacts.add(contact);
     }
   return contacts;

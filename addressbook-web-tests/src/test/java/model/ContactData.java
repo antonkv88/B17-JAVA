@@ -3,6 +3,7 @@ package model;
 import java.util.Objects;
 
 public class ContactData {
+private int id;
 private String firstname;
 private String lastname;
 private String home;
@@ -17,10 +18,6 @@ private String title;
 private String company;
 private String address;
 private String group;
-
-public ContactData(String firstname, String lastname) {
-  this(firstname,lastname,null,null,null,null,null,null,null,null,null,null,null,null);
-}
 
 @Override
 public boolean equals(Object o) {
@@ -74,7 +71,16 @@ private void fillTelephoneNumbers(String home, String mobile, String work, Strin
   this.fax = fax;
 }
 
+public ContactData(int id, String firstname, String lastname) {
+  this(id,firstname,lastname,null,null,null,null,null,null,null,null,null,null,null,null);
+}
+
 public ContactData(String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3, String group) {
+  this(Integer.MAX_VALUE,firstname,lastname,nickname,title,company,address,home,mobile,work,fax,email1,email2,email3,group);
+}
+
+public ContactData(int id, String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3, String group) {
+  fillId(id);
   fillTelephoneNumbers(home, mobile, work, fax);
   fillEmails(email1, email2, email3);
   fillNames(firstname,lastname);
@@ -124,8 +130,14 @@ public String getCompany() {
 public String getAddress() {
   return address;
 }
-
 public String getGroup() {
   return group;
+}
+public int getId() {
+  return id;
+}
+
+public void fillId(int id) {
+  this.id = id;
 }
 }
