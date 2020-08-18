@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/NavigationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +233,7 @@
       <workItem from="1597520033227" duration="5941000" />
       <workItem from="1597604262027" duration="6457000" />
       <workItem from="1597695280214" duration="6046000" />
-      <workItem from="1597779261676" duration="859000" />
+      <workItem from="1597779261676" duration="2238000" />
     </task>
     <servers />
   </component>
@@ -359,10 +362,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="480" y="219" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1597779261760" />
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596143319740">
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1597780939631">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596143319740" />
+    <state x="862" y="251" width="540" height="497" key="extract.method.dialog/0.0.1680.1020@0.0.1680.1020" timestamp="1597780939631" />
     <state x="222" y="130" key="new project wizard" timestamp="1596049674113">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>

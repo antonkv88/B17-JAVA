@@ -22,9 +22,7 @@ public void gotoGroupPage() {
 public void gotoAddNewContact() {
   click(By.linkText("add new"));
 }
-public void returnGroupPage() {
-  click(By.linkText("group page"));
-}
+
 public void returnHomePage() {
   if (isElementPresent(By.id("maintable"))){
     return;

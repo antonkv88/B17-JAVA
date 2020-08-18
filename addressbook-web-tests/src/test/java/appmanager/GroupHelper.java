@@ -65,4 +65,16 @@ public List<GroupData> getGroupList() {
   return groups;
 }
 
+public void returnGroupPage() {
+  click(By.linkText("group page"));
+}
+
+public void modifyGroup(int index, GroupData group) {
+  selectGroup(index);
+  initGroupModify();
+  fillGroupCreation(group);
+  submitGroupModify();
+  returnGroupPage();
+}
+
 }
