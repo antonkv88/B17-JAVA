@@ -13,9 +13,9 @@ public class DeleteContactTest extends TestBase {
       ContactData contactData = new ContactData("anton", "kozlov","nick","title","company",
               "address","222666", "8999999333222", "666222", "2332",
               "test1@mail.ru", "test2@gmail.com", "test3@test.ru","test1");
-      app.getNavigationHelper().gotoAddNewContact();
+      app.goTo().gotoAddNewContact();
       app.getContactHelper().createContact(contactData);
-      app.getNavigationHelper().returnHomePage();
+      app.goTo().returnHomePage();
     }
     List<ContactData> before = app.getContactHelper().getContactList();
     app.getContactHelper().selectFirstContact();

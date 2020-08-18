@@ -16,9 +16,9 @@ public class ModifyContactTest extends TestBase {
    ContactData contactData = new ContactData("anton", "kozlov","nick","title","company",
            "address","222666", "8999999333222", "666222", "2332",
            "test1@mail.ru", "test2@gmail.com", "test3@test.ru","test1");
-   app.getNavigationHelper().gotoAddNewContact();
+   app.goTo().gotoAddNewContact();
    app.getContactHelper().createContact(contactData);
-   app.getNavigationHelper().returnHomePage();
+   app.goTo().returnHomePage();
   }
   List<ContactData> before = app.getContactHelper().getContactList();
   app.getContactHelper().modifyFirstContract();
@@ -27,7 +27,7 @@ public class ModifyContactTest extends TestBase {
           "123123", "9999999","modify1@mail.ru", "modify2@gmail.com", "modify3@test.ru", null);
   app.getContactHelper().fillContacts(contact, false);
   app.getContactHelper().submitModifyContact();
-  app.getNavigationHelper().returnHomePage();
+  app.goTo().returnHomePage();
   List<ContactData> after = app.getContactHelper().getContactList();
   Assert.assertEquals(after.size(), before.size());
 
