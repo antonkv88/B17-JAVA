@@ -4,11 +4,7 @@
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +95,8 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ModifyContactTest.testModifyContact">
-    <configuration name="CreateContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.tests">
+    <configuration name="DeleteContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +105,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteContactTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -117,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateContactTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteContactTest.testDeleteContact" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +122,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
-      <option name="METHOD_NAME" value="createContactTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.DeleteContactTest" />
+      <option name="METHOD_NAME" value="testDeleteContact" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,7 +166,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModifyGroupTest.testModifyGroup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -179,9 +175,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ModifyGroupTest" />
-      <option name="METHOD_NAME" value="testModifyGroup" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -189,19 +183,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ModifyContactTest" />
-      <item itemvalue="TestNG.CreateContactTest" />
       <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
-      <item itemvalue="TestNG.ModifyGroupTest.testModifyGroup" />
-      <item itemvalue="TestNG.CreateContactTest.createContactTest" />
+      <item itemvalue="TestNG.tests" />
+      <item itemvalue="TestNG.ModifyContactTest" />
+      <item itemvalue="TestNG.DeleteContactTest.testDeleteContact" />
+      <item itemvalue="TestNG.DeleteContactTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
-        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
-        <item itemvalue="TestNG.CreateContactTest" />
-        <item itemvalue="TestNG.ModifyGroupTest.testModifyGroup" />
+        <item itemvalue="TestNG.tests" />
         <item itemvalue="TestNG.ModifyContactTest" />
+        <item itemvalue="TestNG.DeleteContactTest" />
+        <item itemvalue="TestNG.DeleteContactTest.testDeleteContact" />
+        <item itemvalue="TestNG.ModifyContactTest.testModifyContact" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +229,8 @@
       <workItem from="1597350052700" duration="5698000" />
       <workItem from="1597520033227" duration="5941000" />
       <workItem from="1597604262027" duration="6457000" />
-      <workItem from="1597695280214" duration="5477000" />
+      <workItem from="1597695280214" duration="6046000" />
+      <workItem from="1597779261676" duration="859000" />
     </task>
     <servers />
   </component>
@@ -308,38 +303,38 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="244" key="GridCell.Tab.0.bottom" timestamp="1597700924264">
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom" timestamp="1597780121625">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1597700924264" />
-    <state width="1637" height="244" key="GridCell.Tab.0.center" timestamp="1597700924264">
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1597780121625" />
+    <state width="1637" height="244" key="GridCell.Tab.0.center" timestamp="1597780121625">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1597700924264" />
-    <state width="1637" height="244" key="GridCell.Tab.0.left" timestamp="1597700924263">
+    <state width="1637" height="244" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1597780121625" />
+    <state width="1637" height="244" key="GridCell.Tab.0.left" timestamp="1597780121625">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1597700924263" />
-    <state width="1637" height="244" key="GridCell.Tab.0.right" timestamp="1597700924264">
+    <state width="1637" height="244" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1597780121625" />
+    <state width="1637" height="244" key="GridCell.Tab.0.right" timestamp="1597780121625">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1597700924264" />
-    <state width="1637" height="239" key="GridCell.Tab.1.bottom" timestamp="1597700413144">
+    <state width="1637" height="244" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1597780121625" />
+    <state width="1637" height="239" key="GridCell.Tab.1.bottom" timestamp="1597701345388">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1597700413144" />
-    <state width="1637" height="239" key="GridCell.Tab.1.center" timestamp="1597700413144">
+    <state width="1637" height="239" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1597701345388" />
+    <state width="1637" height="239" key="GridCell.Tab.1.center" timestamp="1597701345388">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1597700413144" />
-    <state width="1637" height="239" key="GridCell.Tab.1.left" timestamp="1597700413143">
+    <state width="1637" height="239" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1597701345388" />
+    <state width="1637" height="239" key="GridCell.Tab.1.left" timestamp="1597701345388">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1597700413143" />
-    <state width="1637" height="239" key="GridCell.Tab.1.right" timestamp="1597700413144">
+    <state width="1637" height="239" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1597701345388" />
+    <state width="1637" height="239" key="GridCell.Tab.1.right" timestamp="1597701345388">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1597700413144" />
+    <state width="1637" height="239" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1597701345388" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -360,10 +355,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state width="848" height="518" key="XDebugger.FullValuePopup/0.0.1680.1020@0.0.1680.1020" timestamp="1596834039218" />
-    <state x="480" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1597695284354">
+    <state x="480" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1597779261760">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="480" y="219" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1597695284354" />
+    <state x="480" y="219" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1597779261760" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1596143319740">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
