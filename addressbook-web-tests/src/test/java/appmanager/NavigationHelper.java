@@ -19,16 +19,9 @@ public void groupPage() {
   }
 }
 
-public void gotoAddNewContact() {
+public void newContact() {
   click(By.linkText("add new"));
 }
 
-public void returnHomePage() {
-  if (isElementPresent(By.id("maintable"))){
-    return;
-  } else {
-    click(By.linkText("home page"));
-  }
 
-}
 }

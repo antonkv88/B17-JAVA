@@ -20,21 +20,42 @@ public void finishAddNewEntity() {
   click(By.xpath("(//input[@name='submit'])[2]"));
 }
 
-public void selectFirstContact() {
-  click(By.name("selected[]"));
+public void select(int index) {
+  wd.findElements(By.name("selected[]")).get(index).click();
 }
 
-public void delSelectedContract(){
+public void deleteSelected(){
   click(By.xpath("//input[@value='Delete']"));
 }
-public void modifyFirstContract(){
+public void modifySelected(){
   click(By.xpath("//img[@alt='Edit']"));
 }
-public void submitModifyContact(){
+public void modify(int index, ContactData contact) {
+  select(index);
+  modifySelected();
+  fill(contact, false);
+  submit();
+  homePage();
+}
+
+public void delete(int index) {
+  select(index);
+  deleteSelected();
+}
+
+public void homePage() {
+  if (isElementPresent(By.id("maintable"))){
+    return;
+  } else {
+    click(By.linkText("home page"));
+  }
+}
+
+public void submit(){
   click(By.xpath("(//input[@name='update'])[2]"));
 }
 
-public void fillContacts(ContactData contactData, boolean creation) {
+public void fill(ContactData contactData, boolean creation) {
   fillTextField("firstname", contactData.getFirstname());
   fillTextField("lastname", contactData.getLastname());
   fillTextField("nickname", contactData.getNickname());
@@ -63,12 +84,12 @@ public boolean isThereAContact() {
   return isElementPresent(By.name("selected[]"));
 }
 
-public void createContact(ContactData contact) {
-  fillContacts(contact,true);
+public void create(ContactData contact) {
+  fill(contact,true);
   finishAddNewEntity();
 }
 
-public List<ContactData> getContactList() {
+public List<ContactData> list() {
   String lastname;
   String firstname;
   List<ContactData> contacts = new ArrayList<ContactData>();
