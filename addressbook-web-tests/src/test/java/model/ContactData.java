@@ -3,7 +3,7 @@ package model;
 import java.util.Objects;
 
 public class ContactData {
-private int id;
+private int id = Integer.MAX_VALUE;
 private String firstname;
 private String lastname;
 private String home;
@@ -27,70 +27,10 @@ public boolean equals(Object o) {
   return Objects.equals(firstname, that.firstname) &&
           Objects.equals(lastname, that.lastname);
 }
-
 @Override
 public int hashCode() {
   return Objects.hash(firstname, lastname);
 }
-
-private void fillGroup (String group) {
-this.group = group;
-}
-
-private void fillNickname(String nickname) {
-  this.nickname = nickname;
-}
-
-private void fillTitle(String title) {
-  this.title = title;
-}
-
-private void fillCompany(String company) {
-  this.company = company;
-}
-
-private void fillAddess(String address) {
-  this.address = address;
-}
-
-private void fillNames(String firstname, String lastname){
-  this.firstname = firstname;
-  this.lastname = lastname;
-}
-
-private void fillEmails(String email1, String email2, String email3) {
-  this.email1 = email1;
-  this.email2 = email2;
-  this.email3 = email3;
-}
-
-private void fillTelephoneNumbers(String home, String mobile, String work, String fax) {
-  this.home = home;
-  this.mobile = mobile;
-  this.work = work;
-  this.fax = fax;
-}
-
-public ContactData(int id, String firstname, String lastname) {
-  this(id,firstname,lastname,null,null,null,null,null,null,null,null,null,null,null,null);
-}
-
-public ContactData(String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3, String group) {
-  this(Integer.MAX_VALUE,firstname,lastname,nickname,title,company,address,home,mobile,work,fax,email1,email2,email3,group);
-}
-
-public ContactData(int id, String firstname, String lastname, String nickname, String title, String company, String address, String home, String mobile, String work, String fax, String email1, String email2, String email3, String group) {
-  fillId(id);
-  fillTelephoneNumbers(home, mobile, work, fax);
-  fillEmails(email1, email2, email3);
-  fillNames(firstname,lastname);
-  fillNickname(nickname);
-  fillTitle(title);
-  fillCompany(company);
-  fillAddess(address);
-  fillGroup(group);
-}
-
 public String getEmail1() {
   return email1;
 }
@@ -137,7 +77,67 @@ public int getId() {
   return id;
 }
 
-public void fillId(int id) {
+public ContactData withId(int id) {
   this.id = id;
+  return this;
 }
+public ContactData withFirstname(String firstname) {
+  this.firstname = firstname;
+  return this;
 }
+public ContactData withLastname(String lastname) {
+  this.lastname = lastname;
+  return this;
+}
+public ContactData withHome(String home) {
+  this.home = home;
+  return this;
+}
+public ContactData withMobile(String mobile) {
+  this.mobile = mobile;
+  return this;
+}
+public ContactData withWork(String work) {
+  this.work = work;
+  return this;
+}
+public ContactData withFax(String fax) {
+  this.fax = fax;
+  return this;
+}
+public ContactData withEmail1(String email1) {
+  this.email1 = email1;
+  return this;
+}
+public ContactData withmail2(String email2) {
+  this.email2 = email2;
+  return this;
+}
+public ContactData withEmail3(String email3) {
+  this.email3 = email3;
+  return this;
+}
+public ContactData withNickname(String nickname) {
+  this.nickname = nickname;
+  return this;
+}
+public ContactData withTitle(String title) {
+  this.title = title;
+  return this;
+}
+public ContactData withCompany(String company) {
+  this.company = company;
+  return this;
+}
+public ContactData withAddress(String address) {
+  this.address = address;
+  return this;
+}
+public ContactData withGroup(String group) {
+  this.group = group;
+  return this;
+}
+
+}
+
+

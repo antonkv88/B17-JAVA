@@ -8,7 +8,6 @@ public class NavigationHelper extends HelperBase{
 public NavigationHelper(WebDriver wd) {
   super(wd);
 }
-
 public void groupPage() {
   if (isElementPresent(By.tagName("h1"))
           && wd.findElement(By.tagName("h1")).getText().equals("Groups")
@@ -18,10 +17,8 @@ public void groupPage() {
     click(By.linkText("groups"));
   }
 }
-
 public void newContact() {
   click(By.linkText("add new"));
 }
-
 
 }

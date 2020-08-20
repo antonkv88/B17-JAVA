@@ -13,11 +13,11 @@ public class ModifyContactTest extends TestBase {
 public void ensurePreconditions() {
  app.contact().homePage();
  if (app.contact().list().size() ==0) {
-  ContactData contactData = new ContactData("anton", "kozlov","nick","title","company",
-          "address","222666", "8999999333222", "666222", "2332",
-          "test1@mail.ru", "test2@gmail.com", "test3@test.ru","test1");
+  ContactData contact = new ContactData().withFirstname("anton").withLastname("kozlov").withNickname("nick").withTitle("title")
+          .withCompany("company").withAddress("address").withHome("222666").withMobile("8999999333222").withWork("666222")
+          .withFax("2332").withEmail1("test1@mail.ru").withmail2("test2@gmail.com").withEmail3("test3@gmail.com").withGroup("test1");
   app.goTo().newContact();
-  app.contact().create(contactData);
+  app.contact().create(contact);
   app.contact().homePage();
  }
 }
@@ -26,9 +26,10 @@ public void ensurePreconditions() {
  public void testModifyContact() {
   List<ContactData> before = app.contact().list();
   int index = before.size() - 1;
-  ContactData contact = new ContactData(before.get(index).getId(),"modify", "modify2", "modify_nick","modify_title",
-          "modify_company","modify_address" ,"0000000", "111111111111",
-          "123123", "9999999","modify1@mail.ru", "modify2@gmail.com", "modify3@test.ru", null);
+  ContactData contact = new ContactData().withId(before.get(index).getId()).withFirstname("modify").withLastname("modify2")
+          .withNickname("modify_nick").withTitle("modify_title").withCompany("modify_company").withAddress("modify_address").withHome("0000000")
+          .withMobile("111111111111").withWork("123123").withFax("9999999").withEmail1("modify1@mail.ru")
+          .withmail2("modify2@gmail.com").withEmail3("modify3@test.ru");
   app.contact().modify(index, contact);
   List<ContactData> after = app.contact().list();
   Assert.assertEquals(after.size(), before.size());

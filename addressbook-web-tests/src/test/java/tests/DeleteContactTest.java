@@ -12,11 +12,11 @@ public class DeleteContactTest extends TestBase {
 public void ensurePreconditions() {
     app.contact().homePage();
     if (app.contact().list().size() ==0) {
-      ContactData contactData = new ContactData("anton", "kozlov","nick","title","company",
-              "address","222666", "8999999333222", "666222", "2332",
-              "test1@mail.ru", "test2@gmail.com", "test3@test.ru","test1");
+      ContactData contact = new ContactData().withFirstname("aaa").withLastname("bbb").withNickname("nick").withTitle("title")
+              .withCompany("company").withAddress("address").withHome("222666").withMobile("8999999333222").withWork("666222")
+              .withFax("2332").withEmail1("test1@mail.ru").withmail2("test2@gmail.com").withEmail3("test3@gmail.com").withGroup("test1");
       app.goTo().newContact();
-      app.contact().create(contactData);
+      app.contact().create(contact);
       app.contact().homePage();
     }
 }

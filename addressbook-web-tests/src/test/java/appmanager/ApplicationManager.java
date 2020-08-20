@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
-
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -44,23 +43,18 @@ public void stop() {
   getSessionHelper().logout();
   wd.quit();
 }
-
 public void closeAlert(){
   wd.switchTo().alert().accept();
 }
-
 public GroupHelper group() {
   return groupHelper;
 }
-
 public ContactHelper contact() {
   return contactHelper;
 }
-
 public NavigationHelper goTo() {
   return navigationHelper;
 }
-
 public SessionHelper getSessionHelper() {
   return sessionHelper;
 }

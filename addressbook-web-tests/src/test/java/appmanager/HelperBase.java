@@ -11,11 +11,9 @@ protected WebDriver wd;
 public HelperBase(WebDriver wd) {
   this.wd = wd;
 }
-
 protected void click(By name) {
   wd.findElement(name).click();
 }
-
 protected void fillTextField(String fieldName, String fieldValue) {
   click(By.name(fieldName));
   if (fieldValue != null) {
@@ -26,21 +24,19 @@ protected void fillTextField(String fieldName, String fieldValue) {
     }
   }
 }
-
-public boolean isAlertPresent() {
-  try {
-    wd.switchTo().alert();
-    return true;
-  } catch (NoAlertPresentException e) {
-    return false;
-  }
-}
-
 public boolean isElementPresent(By by) {
   try {
     wd.findElement(by);
     return true;
   } catch (NoSuchElementException e) {
+    return false;
+  }
+}
+public boolean isAlertPresent() {
+  try {
+    wd.switchTo().alert();
+    return true;
+  } catch (NoAlertPresentException e) {
     return false;
   }
 }
