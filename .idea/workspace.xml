@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/appmanager/GroupHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/ModifyGroupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteContactTest">
+  <component name="RunManager" selected="TestNG.ModifyGroupTest">
     <configuration name="CreatGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -137,41 +137,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CreatGroupTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateContactTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
-      <option name="METHOD_NAME" value="createContactTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -212,19 +177,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModifyContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ModifyContactTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ModifyGroupTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.DeleteContactTest" />
       <item itemvalue="TestNG.CreatGroupTest" />
+      <item itemvalue="TestNG.DeleteContactTest" />
       <item itemvalue="TestNG.DeleteGroupTest" />
-      <item itemvalue="TestNG.CreateContactTest" />
-      <item itemvalue="TestNG.CreateContactTest.createContactTest" />
+      <item itemvalue="TestNG.ModifyContactTest" />
+      <item itemvalue="TestNG.ModifyGroupTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteContactTest" />
-        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
-        <item itemvalue="TestNG.CreateContactTest" />
+        <item itemvalue="TestNG.ModifyGroupTest" />
+        <item itemvalue="TestNG.ModifyContactTest" />
         <item itemvalue="TestNG.DeleteGroupTest" />
+        <item itemvalue="TestNG.DeleteContactTest" />
         <item itemvalue="TestNG.CreatGroupTest" />
       </list>
     </recent_temporary>
@@ -263,6 +262,7 @@
       <workItem from="1597779261676" duration="4971000" />
       <workItem from="1597868076746" duration="5352000" />
       <workItem from="1597953180846" duration="6236000" />
+      <workItem from="1598033716659" duration="8291000" />
     </task>
     <servers />
   </component>
@@ -303,10 +303,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="614" y="312" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1020@0.0.1680.1020" timestamp="1595365506182" />
-    <state x="645" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1597953316840">
+    <state x="645" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1598038187423">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="645" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1020@0.0.1680.1020" timestamp="1597953316840" />
+    <state x="645" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1020@0.0.1680.1020" timestamp="1598038187423" />
     <state x="569" y="293" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596405783613">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -335,22 +335,22 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1596049717321" />
-    <state width="1637" height="239" key="GridCell.Tab.0.bottom" timestamp="1597959422589">
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom" timestamp="1598043985269">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1597959422589" />
-    <state width="1637" height="239" key="GridCell.Tab.0.center" timestamp="1597959422589">
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1598043985269" />
+    <state width="1637" height="244" key="GridCell.Tab.0.center" timestamp="1598043985268">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1597959422589" />
-    <state width="1637" height="239" key="GridCell.Tab.0.left" timestamp="1597959422589">
+    <state width="1637" height="244" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1598043985268" />
+    <state width="1637" height="244" key="GridCell.Tab.0.left" timestamp="1598043985268">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1597959422589" />
-    <state width="1637" height="239" key="GridCell.Tab.0.right" timestamp="1597959422589">
+    <state width="1637" height="244" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1598043985268" />
+    <state width="1637" height="244" key="GridCell.Tab.0.right" timestamp="1598043985268">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="239" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1597959422589" />
+    <state width="1637" height="244" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1598043985268" />
     <state width="1637" height="239" key="GridCell.Tab.1.bottom" timestamp="1597959422590">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -387,10 +387,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state width="848" height="518" key="XDebugger.FullValuePopup/0.0.1680.1020@0.0.1680.1020" timestamp="1596834039218" />
-    <state x="480" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1597953179636">
+    <state x="480" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1598033716651">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="480" y="219" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1597953179636" />
+    <state x="480" y="219" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1598033716651" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1597871851164">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -413,15 +413,6 @@
     <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/0.0.1680.1020@0.0.1680.1020" timestamp="1597070033262" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/DeleteContactTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="columns" language="JAVA" />

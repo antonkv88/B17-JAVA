@@ -1,16 +1,14 @@
 package appmanager;
 
 import model.ContactData;
+import model.Contacts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase{
 
@@ -33,8 +31,8 @@ public void deleteSelected(){
 public void modifySelected(){
   click(By.xpath("//img[@alt='Edit']"));
 }
-public void modify(int index, ContactData contact) {
-  select(index);
+public void modify(ContactData contact) {
+  selectById(contact.getId());
   modifySelected();
   fill(contact, false);
   submit();
@@ -83,26 +81,10 @@ public void create(ContactData contact) {
   fill(contact,true);
   finishAddNewEntity();
 }
-public List<ContactData> list() {
+public Contacts all() {
   String lastname;
   String firstname;
-  List<ContactData> contacts = new ArrayList<ContactData>();
-  List<WebElement> rows = wd.findElements(By.cssSelector("table tr"));
-  for (WebElement row : rows){
-    List<WebElement> columns = row.findElements(By.tagName("td"));
-    if (columns.size() == 0) continue; //пропускаю заголовок
-    int id = Integer.parseInt(columns.get(0).findElement(By.tagName("input")).getAttribute("value"));
-    lastname = columns.get(1).getText();
-    firstname = columns.get(2).getText();
-    ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname);
-    contacts.add(contact);
-  }
-  return contacts;
-}
-public Set<ContactData> all() {
-  String lastname;
-  String firstname;
-  Set<ContactData> contacts = new HashSet<ContactData>();
+  Contacts contacts = new Contacts();
   List<WebElement> rows = wd.findElements(By.cssSelector("table tr"));
   for (WebElement row : rows){
     List<WebElement> columns = row.findElements(By.tagName("td"));
