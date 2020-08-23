@@ -34,7 +34,7 @@ public void init() {
   contactHelper = new ContactHelper(wd);
   navigationHelper = new NavigationHelper(wd);
   sessionHelper = new SessionHelper(wd);
-  wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+  wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
   wd.get("http://localhost/addressbook/");
   getSessionHelper().login("admin", "secret");
 }

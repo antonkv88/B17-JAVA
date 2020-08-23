@@ -28,12 +28,13 @@ public void selectById(int id) {
 public void deleteSelected(){
   click(By.xpath("//input[@value='Delete']"));
 }
-public void modifySelected(){
-  click(By.xpath("//img[@alt='Edit']"));
+
+public void modifyByNumRow(int id){
+  WebElement href = wd.findElement(By.xpath("(//a[@href='edit.php?id="+id+"'])"));
+  href.findElement(By.tagName("img")).click();
 }
 public void modify(ContactData contact) {
-  selectById(contact.getId());
-  modifySelected();
+  modifyByNumRow(contact.getId());
   fill(contact, false);
   submit();
   homePage();
