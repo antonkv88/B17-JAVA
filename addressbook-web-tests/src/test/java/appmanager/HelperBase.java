@@ -24,6 +24,11 @@ protected void fillTextField(String fieldName, String fieldValue) {
     }
   }
 }
+
+protected String getTextField(String fieldName) {
+  return wd.findElement(By.name(fieldName)).getAttribute("value");
+}
+
 public boolean isElementPresent(By by) {
   try {
     wd.findElement(by);

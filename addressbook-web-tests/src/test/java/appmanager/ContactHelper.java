@@ -30,7 +30,7 @@ public void deleteSelected(){
 }
 
 public void modifyByNumRow(int id){
-  WebElement href = wd.findElement(By.xpath("(//a[@href='edit.php?id="+id+"'])"));
+  WebElement href = wd.findElement(By.xpath(String.format("(//a[@href='edit.php?id=%s'])",id)));
   href.findElement(By.tagName("img")).click();
 }
 public void modify(ContactData contact) {
@@ -85,6 +85,7 @@ public void create(ContactData contact) {
 public Contacts all() {
   String lastname;
   String firstname;
+  String allEmails;
   Contacts contacts = new Contacts();
   List<WebElement> rows = wd.findElements(By.cssSelector("table tr"));
   for (WebElement row : rows){
@@ -93,10 +94,37 @@ public Contacts all() {
     int id = Integer.parseInt(columns.get(0).findElement(By.tagName("input")).getAttribute("value"));
     lastname = columns.get(1).getText();
     firstname = columns.get(2).getText();
-    ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname);
+    String[] phones = columns.get(5).getText().split("\n");
+    allEmails = columns.get(4).getText();
+
+    ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withHome(phones[0])
+            .withMobile(phones[1]).withWork(phones[2]);
     contacts.add(contact);
   }
   return contacts;
+}
+
+public ContactData infoFromEditForm(ContactData contact) {
+  int id = contact.getId();
+  modifyByNumRow(id);
+  ContactData contactData = getContactFromEditForm();
+  contactData.setId(id);
+  return contactData;
+}
+
+private ContactData getContactFromEditForm() {
+  String firstname = getTextField("firstname");
+  String lastname = getTextField("lastname");
+  String home = getTextField("home");
+  String mobile = getTextField("mobile");
+  String work = getTextField("work");
+  String fax = getTextField("fax");
+  String email = getTextField("email");
+  String email2 = getTextField("email2");
+  String email3 = getTextField("email3");
+  wd.navigate().back();
+  return new ContactData().withLastname(lastname).withFirstname(firstname).withHome(home).withMobile(mobile)
+          .withFax(fax).withWork(work).withEmail1(email).withmail2(email2).withEmail3(email3);
 }
 
 }
