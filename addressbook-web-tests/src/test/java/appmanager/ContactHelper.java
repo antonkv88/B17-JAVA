@@ -85,7 +85,6 @@ public void create(ContactData contact) {
 public Contacts all() {
   String lastname;
   String firstname;
-  String allEmails;
   Contacts contacts = new Contacts();
   List<WebElement> rows = wd.findElements(By.cssSelector("table tr"));
   for (WebElement row : rows){
@@ -95,10 +94,11 @@ public Contacts all() {
     lastname = columns.get(1).getText();
     firstname = columns.get(2).getText();
     String[] phones = columns.get(5).getText().split("\n");
-    allEmails = columns.get(4).getText();
-
-    ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withHome(phones[0])
-            .withMobile(phones[1]).withWork(phones[2]);
+    String[] emails = columns.get(4).getText().split("\n");
+    String address = columns.get(3).getText();
+    ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address)
+            .withHome(phones[0]).withMobile(phones[1]).withWork(phones[2])
+            .withEmail1(emails[0]).withmail2(emails[1]).withEmail3(emails[2]);
     contacts.add(contact);
   }
   return contacts;
@@ -122,9 +122,11 @@ private ContactData getContactFromEditForm() {
   String email = getTextField("email");
   String email2 = getTextField("email2");
   String email3 = getTextField("email3");
+  String address = getTextField("address");
   wd.navigate().back();
-  return new ContactData().withLastname(lastname).withFirstname(firstname).withHome(home).withMobile(mobile)
-          .withFax(fax).withWork(work).withEmail1(email).withmail2(email2).withEmail3(email3);
+  return new ContactData().withLastname(lastname).withFirstname(firstname).withAddress(address)
+          .withHome(home).withMobile(mobile).withFax(fax).withWork(work)
+          .withEmail1(email).withmail2(email2).withEmail3(email3);
 }
 
 }

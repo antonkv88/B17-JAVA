@@ -26,12 +26,17 @@ public void ensurePreconditions() {
 public void testContactPhone(){
     ContactData contactFromMainForm = app.contact().all().iterator().next();
     ContactData contactFromEditHome = app.contact().infoFromEditForm(contactFromMainForm);
-    assertThat(contactFromMainForm.getHome(),equalTo(cleaned(contactFromEditHome.getHome())));
-    assertThat(contactFromMainForm.getMobile(),equalTo(cleaned(contactFromEditHome.getMobile())));
-    assertThat(contactFromMainForm.getWork(),equalTo(cleaned(contactFromEditHome.getWork())));
+    assertThat(contactFromMainForm.getHome(),equalTo(cleanedPhone(contactFromEditHome.getHome())));
+    assertThat(contactFromMainForm.getMobile(),equalTo(cleanedPhone(contactFromEditHome.getMobile())));
+    assertThat(contactFromMainForm.getWork(),equalTo(cleanedPhone(contactFromEditHome.getWork())));
+    assertThat(contactFromMainForm.getAddress(),equalTo(contactFromEditHome.getAddress()));
+    assertThat(contactFromMainForm.getEmail1(),equalTo(contactFromEditHome.getEmail1()));
+    assertThat(contactFromMainForm.getEmail2(),equalTo(contactFromEditHome.getEmail2()));
+    assertThat(contactFromMainForm.getEmail3(),equalTo(contactFromEditHome.getEmail3()));
   }
 
-  public String cleaned(String phone) {
+  public String cleanedPhone(String phone) {
     return phone.replaceAll("\\s","").replaceAll("[-()]","");
   }
+
 }
