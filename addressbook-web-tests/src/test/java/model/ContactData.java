@@ -1,5 +1,6 @@
 package model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -18,6 +19,7 @@ private String title;
 private String company;
 private String address;
 private String group;
+private File photo;
 
 @Override
 public boolean equals(Object o) {
@@ -33,7 +35,9 @@ public boolean equals(Object o) {
 public int hashCode() {
   return Objects.hash(id, firstname, lastname);
 }
-
+public void setPhoto(File photo) {
+  this.photo = photo;
+}
 public String getEmail1() {
   return email1;
 }
@@ -80,7 +84,6 @@ public int getId() {
   return id;
 }
 public void setId(int id) {this.id = id;}
-
 public ContactData withId(int id) {
   this.id = id;
   return this;
@@ -139,6 +142,10 @@ public ContactData withAddress(String address) {
 }
 public ContactData withGroup(String group) {
   this.group = group;
+  return this;
+}
+public ContactData withPhoto(File photo) {
+  this.photo = photo;
   return this;
 }
 
