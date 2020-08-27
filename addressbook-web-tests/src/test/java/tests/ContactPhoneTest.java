@@ -4,6 +4,9 @@ import model.ContactData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -26,16 +29,24 @@ public void ensurePreconditions() {
 public void testContactPhone(){
     ContactData contactFromMainForm = app.contact().all().iterator().next();
     ContactData contactFromEditHome = app.contact().infoFromEditForm(contactFromMainForm);
-    assertThat(contactFromMainForm.getHome(),equalTo(cleanedPhone(contactFromEditHome.getHome())));
-    assertThat(contactFromMainForm.getMobile(),equalTo(cleanedPhone(contactFromEditHome.getMobile())));
-    assertThat(contactFromMainForm.getWork(),equalTo(cleanedPhone(contactFromEditHome.getWork())));
-    assertThat(contactFromMainForm.getAddress(),equalTo(contactFromEditHome.getAddress()));
-    assertThat(contactFromMainForm.getEmail1(),equalTo(contactFromEditHome.getEmail1()));
-    assertThat(contactFromMainForm.getEmail2(),equalTo(contactFromEditHome.getEmail2()));
-    assertThat(contactFromMainForm.getEmail3(),equalTo(contactFromEditHome.getEmail3()));
+    assertThat(contactFromMainForm.getAddress().replaceAll(" ",""),equalTo(contactFromEditHome.getAddress().replaceAll(" ","")));
+    assertThat(contactFromMainForm.getAllPhones(),equalTo(mergePhones(contactFromEditHome)));
+    assertThat(contactFromMainForm.getAllEmails(),equalTo(mergeEmails(contactFromEditHome)));
   }
 
-  public String cleanedPhone(String phone) {
+private String mergePhones(ContactData contact) {
+    return Arrays.asList(contact.getHome(), contact.getMobile(), contact.getWork()).stream()
+            .filter((s) -> !s.equals("")).map(ContactPhoneTest::cleanedPhone).collect(Collectors.joining("\n"));
+
+}
+
+private String mergeEmails(ContactData contact) {
+  return Arrays.asList(contact.getEmail1(), contact.getEmail2(), contact.getEmail3()).stream()
+          .filter((s) -> !s.equals("")).collect(Collectors.joining("\n"));
+
+}
+
+public static String cleanedPhone(String phone) {
     return phone.replaceAll("\\s","").replaceAll("[-()]","");
   }
 

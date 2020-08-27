@@ -19,6 +19,8 @@ private String title;
 private String company;
 private String address;
 private String group;
+private String allPhones;
+private String allEmails;
 private File photo;
 
 @Override
@@ -35,8 +37,11 @@ public boolean equals(Object o) {
 public int hashCode() {
   return Objects.hash(id, firstname, lastname);
 }
-public void setPhoto(File photo) {
-  this.photo = photo;
+public String getAllPhones() {
+  return allPhones;
+}
+public String getAllEmails() {
+  return allEmails;
 }
 public String getEmail1() {
   return email1;
@@ -82,6 +87,9 @@ public String getGroup() {
 }
 public int getId() {
   return id;
+}
+public void setPhoto(File photo) {
+  this.photo = photo;
 }
 public void setId(int id) {this.id = id;}
 public ContactData withId(int id) {
@@ -149,6 +157,15 @@ public ContactData withPhoto(File photo) {
   return this;
 }
 
+public ContactData withAllPhones(String allPhones) {
+  this.allPhones = allPhones;
+  return this;
+}
+
+public ContactData withAllEmails(String allEmails) {
+  this.allEmails = allEmails;
+  return this;
+}
 }
 
 
