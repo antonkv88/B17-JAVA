@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/ContactDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/ContactDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/generator/GroupDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreatGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,11 +125,11 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreatGroupTest">
+  <component name="RunManager" selected="TestNG.CreateContactTest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generator.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 12 -f src/test/resources/contacts.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 5 -f src/test/resources/contact.xml -d xml" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -134,42 +141,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generator.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
+      <option name="PROGRAM_PARAMETERS" value="-c 5 -f src/test/resources/group.xml -d xml" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="generator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ContactPhoneTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactPhoneTest.testContactPhone" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ContactPhoneTest" />
-      <option name="METHOD_NAME" value="testContactPhone" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreatGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatGroupTest.testGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -179,7 +166,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CreatGroupTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testGroupCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -203,20 +191,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateContactTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
+      <option name="METHOD_NAME" value="createContactTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Application.ContactDataGenerator" />
-      <item itemvalue="TestNG.ContactPhoneTest" />
-      <item itemvalue="TestNG.ContactPhoneTest.testContactPhone" />
-      <item itemvalue="TestNG.CreatGroupTest" />
       <item itemvalue="TestNG.CreateContactTest" />
+      <item itemvalue="TestNG.CreateContactTest.createContactTest" />
+      <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreatGroupTest" />
         <item itemvalue="TestNG.CreateContactTest" />
-        <item itemvalue="TestNG.ContactPhoneTest.testContactPhone" />
-        <item itemvalue="TestNG.ContactPhoneTest" />
+        <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="Application.ContactDataGenerator" />
+        <item itemvalue="Application.GroupDataGenerator" />
+        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +267,7 @@
       <workItem from="1598296806975" duration="6333000" />
       <workItem from="1598383732701" duration="4152000" />
       <workItem from="1598473580883" duration="4909000" />
-      <workItem from="1598546899213" duration="7524000" />
+      <workItem from="1598546899213" duration="16149000" />
     </task>
     <servers />
   </component>
@@ -290,10 +296,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="570" y="264" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595451995533" />
-    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598478868856">
+    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598562270504">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="294" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1598478868856" />
+    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1598562270504" />
     <state x="92" y="92" width="1496" height="836" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597959164517">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -318,10 +324,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="624" y="340" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596654259259" />
-    <state x="570" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596391640605">
+    <state x="570" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598562206702">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="570" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1596391640605" />
+    <state x="570" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1598562206702" />
     <state x="732" y="262" key="#xdebugger.XInspectDialog" timestamp="1598210933701">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -334,26 +340,26 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state width="413" height="466" key="DebuggerActiveHint/0.0.1680.1020@0.0.1680.1020" timestamp="1597069401525" />
-    <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1598477289919">
+    <state x="620" y="203" key="FileChooserDialogImpl" timestamp="1598561892538">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1598477289919" />
-    <state width="1637" height="244" key="GridCell.Tab.0.bottom" timestamp="1598555431669">
+    <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1598561892538" />
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom" timestamp="1598564444742">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1598555431669" />
-    <state width="1637" height="244" key="GridCell.Tab.0.center" timestamp="1598555431668">
+    <state width="1637" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1598564444742" />
+    <state width="1637" height="244" key="GridCell.Tab.0.center" timestamp="1598564444742">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1598555431668" />
-    <state width="1637" height="244" key="GridCell.Tab.0.left" timestamp="1598555431668">
+    <state width="1637" height="244" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1598564444742" />
+    <state width="1637" height="244" key="GridCell.Tab.0.left" timestamp="1598564444742">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1598555431668" />
-    <state width="1637" height="244" key="GridCell.Tab.0.right" timestamp="1598555431668">
+    <state width="1637" height="244" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1598564444742" />
+    <state width="1637" height="244" key="GridCell.Tab.0.right" timestamp="1598564444742">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="244" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1598555431668" />
+    <state width="1637" height="244" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1598564444742" />
     <state width="1637" height="342" key="GridCell.Tab.1.bottom" timestamp="1598552848397">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>

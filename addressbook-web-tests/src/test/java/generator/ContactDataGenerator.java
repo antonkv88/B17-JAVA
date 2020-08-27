@@ -3,6 +3,7 @@ package generator;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.thoughtworks.xstream.XStream;
 import model.ContactData;
 
 import java.io.File;
@@ -17,6 +18,8 @@ public class ContactDataGenerator {
 public int count;
 @Parameter(names = "-f", description = "Target file")
 public String file;
+@Parameter(names = "-d", description = "Data Format")
+public String format;
 
 public static void main (String[] args) throws IOException {
   ContactDataGenerator contactGenerator = new ContactDataGenerator();
@@ -31,7 +34,7 @@ public static void main (String[] args) throws IOException {
   contactGenerator.run();
 }
 
-private void save(List<ContactData> contacts, File file) throws IOException {
+private void saveAsCSV(List<ContactData> contacts, File file) throws IOException {
   FileWriter writer = new FileWriter(file);
   for (ContactData contact : contacts){
     writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(), contact.getAddress(),
@@ -43,7 +46,20 @@ private void save(List<ContactData> contacts, File file) throws IOException {
 
 private void run() throws IOException {
   List<ContactData> contacts = generateContacts(count);
-  save(contacts, new File(file));
+  if (format.equals("csv")) {
+    saveAsCSV(contacts, new File(file));
+  } else if (format.equals("xml")) {
+    saveAsXML(contacts, new File(file));
+  } else System.out.print("Unrecognized format " + format);
+}
+
+private void saveAsXML(List<ContactData> contacts, File file) throws IOException {
+  XStream stream = new XStream();
+  stream.processAnnotations(ContactData.class);
+  String xml = stream.toXML(contacts);
+  FileWriter writer = new FileWriter(file);
+  writer.write(xml);
+  writer.close();
 }
 
 private List<ContactData> generateContacts(int count) {
@@ -51,7 +67,7 @@ private List<ContactData> generateContacts(int count) {
   for (int i = 0; i < count; i++) {
     contact.add(new ContactData().withFirstname(String.format("firstname %s",i)).withLastname(String.format("lastname %s",i)).withAddress(String.format("address %s",i))
             .withHome(String.format("111222000%s",i)).withMobile(String.format("899911166%s",i)).withWork(String.format("222333%s",i))
-            .withEmail1(String.format("email%s@test1.ru",i)).withmail2(String.format("email%s@test2.ru",i)).withEmail3(String.format("email%s@test3.ru",i)));
+            .withEmail1(String.format("email%s@test1.ru",i)).withmail2(String.format("email%s@test2.ru",i)).withEmail3(String.format("email%s@test3.ru",i)).withGroup("test1"));
   }
   return contact;
 }

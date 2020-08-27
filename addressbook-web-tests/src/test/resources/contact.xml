@@ -1,0 +1,62 @@
+<list>
+  <contact>
+    <firstname>firstname 0</firstname>
+    <lastname>lastname 0</lastname>
+    <home>1112220000</home>
+    <mobile>8999111660</mobile>
+    <work>2223330</work>
+    <email1>email0@test1.ru</email1>
+    <email2>email0@test2.ru</email2>
+    <email3>email0@test3.ru</email3>
+    <address>address 0</address>
+    <group>test1</group>
+  </contact>
+  <contact>
+    <firstname>firstname 1</firstname>
+    <lastname>lastname 1</lastname>
+    <home>1112220001</home>
+    <mobile>8999111661</mobile>
+    <work>2223331</work>
+    <email1>email1@test1.ru</email1>
+    <email2>email1@test2.ru</email2>
+    <email3>email1@test3.ru</email3>
+    <address>address 1</address>
+    <group>test1</group>
+  </contact>
+  <contact>
+    <firstname>firstname 2</firstname>
+    <lastname>lastname 2</lastname>
+    <home>1112220002</home>
+    <mobile>8999111662</mobile>
+    <work>2223332</work>
+    <email1>email2@test1.ru</email1>
+    <email2>email2@test2.ru</email2>
+    <email3>email2@test3.ru</email3>
+    <address>address 2</address>
+    <group>test1</group>
+  </contact>
+  <contact>
+    <firstname>firstname 3</firstname>
+    <lastname>lastname 3</lastname>
+    <home>1112220003</home>
+    <mobile>8999111663</mobile>
+    <work>2223333</work>
+    <email1>email3@test1.ru</email1>
+    <email2>email3@test2.ru</email2>
+    <email3>email3@test3.ru</email3>
+    <address>address 3</address>
+    <group>test1</group>
+  </contact>
+  <contact>
+    <firstname>firstname 4</firstname>
+    <lastname>lastname 4</lastname>
+    <home>1112220004</home>
+    <mobile>8999111664</mobile>
+    <work>2223334</work>
+    <email1>email4@test1.ru</email1>
+    <email2>email4@test2.ru</email2>
+    <email3>email4@test3.ru</email3>
+    <address>address 4</address>
+    <group>test1</group>
+  </contact>
+</list>
