@@ -4,6 +4,7 @@
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Козловишны/Desktop/repo_testing/B17-JAVA/addressbook-web-tests/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.CreateContactTest.createContactTest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generator.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -129,31 +130,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generator.GroupDataGenerator" />
-      <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 5 -f src/test/resources/group.json -d json" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/Козловишны/Desktop/repo_testing/B17-JAVA/addressbook-web-tests/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,15 +154,80 @@
     </configuration>
     <configuration name="CreateContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateContactTest.createContactTest" type="TestNG" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
+      <option name="METHOD_NAME" value="createContactTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateContactTest.createContactTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateContactTest" />
+      <option name="METHOD_NAME" value="createContactTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -194,19 +235,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Application.ContactDataGenerator" />
+      <item itemvalue="TestNG.CreateContactTest.createContactTest" />
       <item itemvalue="TestNG.CreateContactTest" />
       <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
-      <item itemvalue="TestNG.C:/Users/Козловишны/Desktop/repo_testing/B17-JAVA/addressbook-web-tests/src/test/resources/testng.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Козловишны/Desktop/repo_testing/B17-JAVA/addressbook-web-tests/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.CreateContactTest.createContactTest" />
         <item itemvalue="TestNG.CreateContactTest" />
         <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="Application.ContactDataGenerator" />
-        <item itemvalue="Application.GroupDataGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +292,7 @@
       <workItem from="1598473580883" duration="4909000" />
       <workItem from="1598546899213" duration="16740000" />
       <workItem from="1598645257788" duration="681000" />
-      <workItem from="1599422605452" duration="6064000" />
+      <workItem from="1599422605452" duration="7853000" />
     </task>
     <servers />
   </component>
@@ -274,6 +313,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="157" width="845" height="776" key="#CreateContactTest" timestamp="1599430162887">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="549" y="157" width="845" height="776" key="#CreateContactTest/0.0.1680.1020@0.0.1680.1020" timestamp="1599430162887" />
     <state x="432" y="168" key="#Project_Structure" timestamp="1598476211754">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -282,10 +325,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="570" y="264" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1595451995533" />
-    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599423942886">
+    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599430580998">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1599423942886" />
+    <state x="326" y="267" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1599430580998" />
     <state x="92" y="92" width="1496" height="836" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1597959164517">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -330,22 +373,22 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1598561892538" />
-    <state width="1637" height="366" key="GridCell.Tab.0.bottom" timestamp="1599426509242">
+    <state width="1637" height="366" key="GridCell.Tab.0.bottom" timestamp="1599430583784">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="366" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1599426509242" />
-    <state width="1637" height="366" key="GridCell.Tab.0.center" timestamp="1599426509242">
+    <state width="1637" height="366" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1599430583784" />
+    <state width="1637" height="366" key="GridCell.Tab.0.center" timestamp="1599430583784">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="366" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1599426509242" />
-    <state width="1637" height="366" key="GridCell.Tab.0.left" timestamp="1599426509242">
+    <state width="1637" height="366" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1599430583784" />
+    <state width="1637" height="366" key="GridCell.Tab.0.left" timestamp="1599430583784">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="366" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1599426509242" />
-    <state width="1637" height="366" key="GridCell.Tab.0.right" timestamp="1599426509242">
+    <state width="1637" height="366" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1599430583784" />
+    <state width="1637" height="366" key="GridCell.Tab.0.right" timestamp="1599430583784">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="366" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1599426509242" />
+    <state width="1637" height="366" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1599430583784" />
     <state width="1637" height="342" key="GridCell.Tab.1.bottom" timestamp="1598565041256">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
