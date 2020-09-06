@@ -3,6 +3,8 @@ package generator;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import model.GroupData;
 
@@ -39,25 +41,35 @@ private void run() throws IOException {
     saveAsCSV(groups, new File(file));
   } else if (format.equals("xml")) {
     saveAsXML(groups, new File(file));
+  } else if (format.equals("json")) {
+    saveAsJson(groups, new File(file));
   } else System.out.print("Unrecognized format " + format);
 
+}
+
+private void saveAsJson(List<GroupData> groups, File file) throws IOException {
+  Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
+  String json = gson.toJson(groups);
+  try(FileWriter writer = new FileWriter(file)) {
+    writer.write(json);
+  }
 }
 
 private void saveAsXML(List<GroupData> groups, File file) throws IOException {
   XStream stream = new XStream();
   stream.processAnnotations(GroupData.class);
   String xml = stream.toXML(groups);
-  FileWriter writer = new FileWriter(file);
-  writer.write(xml);
-  writer.close();
+  try(FileWriter writer = new FileWriter(file)) {
+    writer.write(xml);
+  }
 }
 
 private void saveAsCSV(List<GroupData> groups, File file) throws IOException {
-  FileWriter writer = new FileWriter(file);
-  for (GroupData group : groups){
-    writer.write(String.format("%s;%s;%s\n", group.getName(), group.getHeader(), group.getFooter()));
+  try(FileWriter writer = new FileWriter(file)) {
+    for (GroupData group : groups){
+      writer.write(String.format("%s;%s;%s\n", group.getName(), group.getHeader(), group.getFooter()));
+    }
   }
-  writer.close();
 }
 
 private List<GroupData> generateGroups(int count) {

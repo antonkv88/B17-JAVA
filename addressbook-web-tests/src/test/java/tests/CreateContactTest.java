@@ -18,19 +18,21 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreateContactTest extends TestBase {
-@DataProvider
+
+  @DataProvider
 public Iterator<Object[]> validContacts() throws IOException {
-  BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contact.xml")));
-  String xml = "";
-  String line = reader.readLine();
-  while (line != null) {
-    xml += line;
-    line = reader.readLine();
+  try(BufferedReader reader = new BufferedReader (new FileReader(new File("src/test/resources/contact.xml")))){
+    String xml = "";
+    String line = reader.readLine();
+    while (line != null) {
+      xml += line;
+      line = reader.readLine();
+    }
+    XStream stream = new XStream();
+    stream.processAnnotations(ContactData.class);
+    List<ContactData> contacts = (List<ContactData>)stream.fromXML(xml);
+    return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
   }
-  XStream stream = new XStream();
-  stream.processAnnotations(ContactData.class);
-  List<ContactData> contacts = (List<ContactData>)stream.fromXML(xml);
-  return contacts.stream().map((g) -> new Object[] {g}).collect(Collectors.toList()).iterator();
 }
 
   @Test(dataProvider = "validContacts")

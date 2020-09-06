@@ -3,6 +3,8 @@ package generator;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import model.ContactData;
 
@@ -35,13 +37,13 @@ public static void main (String[] args) throws IOException {
 }
 
 private void saveAsCSV(List<ContactData> contacts, File file) throws IOException {
-  FileWriter writer = new FileWriter(file);
-  for (ContactData contact : contacts){
-    writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(), contact.getAddress(),
-            contact.getHome(), contact.getMobile(), contact.getWork(),
-            contact.getEmail1(), contact.getEmail2(), contact.getEmail3()));
+  try(FileWriter writer = new FileWriter(file)) {
+    for (ContactData contact : contacts){
+      writer.write(String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(), contact.getAddress(),
+              contact.getHome(), contact.getMobile(), contact.getWork(),
+              contact.getEmail1(), contact.getEmail2(), contact.getEmail3()));
+    }
   }
-  writer.close();
 }
 
 private void run() throws IOException {
@@ -50,16 +52,26 @@ private void run() throws IOException {
     saveAsCSV(contacts, new File(file));
   } else if (format.equals("xml")) {
     saveAsXML(contacts, new File(file));
+  }else if (format.equals("json")) {
+      saveAsJson(contacts, new File(file));
   } else System.out.print("Unrecognized format " + format);
+}
+
+private void saveAsJson(List<ContactData> contacts, File file) throws IOException {
+  Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
+  String json = gson.toJson(contacts);
+  try(FileWriter writer = new FileWriter(file)) {
+    writer.write(json);
+  }
 }
 
 private void saveAsXML(List<ContactData> contacts, File file) throws IOException {
   XStream stream = new XStream();
   stream.processAnnotations(ContactData.class);
   String xml = stream.toXML(contacts);
-  FileWriter writer = new FileWriter(file);
-  writer.write(xml);
-  writer.close();
+  try(FileWriter writer = new FileWriter(file)) {
+    writer.write(xml);
+  }
 }
 
 private List<ContactData> generateContacts(int count) {
