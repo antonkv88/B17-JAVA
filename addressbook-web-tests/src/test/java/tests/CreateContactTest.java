@@ -39,7 +39,6 @@ public Iterator<Object[]> validContacts() throws IOException {
   public void createContactTest(ContactData contact) throws Exception {
     Contacts before = app.contact().all();
     app.goTo().newContact();
-    File photo = new File("");
     app.contact().create(contact);
     app.contact().homePage();
     Contacts after = app.contact().all();
