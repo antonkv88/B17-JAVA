@@ -4,7 +4,6 @@
     <list default="true" id="41219dd5-bc76-4da7-9723-2d1c3dc7b95d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreatGroupTest.testGroupCreation">
+  <component name="RunManager" selected="TestNG.DbConnectionTest.dbConnectiontest">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generator.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -234,14 +233,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DbConnectionTest.dbConnectiontest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DbConnectionTest" />
+      <option name="METHOD_NAME" value="dbConnectiontest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ContactDataGenerator" />
       <item itemvalue="TestNG.CreateContactTest.createContactTest" />
       <item itemvalue="TestNG.CreateContactTest" />
       <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
+      <item itemvalue="TestNG.DbConnectionTest.dbConnectiontest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DbConnectionTest.dbConnectiontest" />
         <item itemvalue="TestNG.CreatGroupTest.testGroupCreation" />
         <item itemvalue="TestNG.CreateContactTest.createContactTest" />
         <item itemvalue="TestNG.CreateContactTest" />
@@ -293,7 +312,8 @@
       <workItem from="1598546899213" duration="16740000" />
       <workItem from="1598645257788" duration="681000" />
       <workItem from="1599422605452" duration="7935000" />
-      <workItem from="1599504695672" duration="5005000" />
+      <workItem from="1599504695672" duration="5608000" />
+      <workItem from="1599589110338" duration="3246000" />
     </task>
     <servers />
   </component>
@@ -362,10 +382,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="732" y="262" key="#xdebugger.XInspectDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1598210933701" />
-    <state x="100" y="212" width="490" height="559" key="#xdebugger.evaluate" timestamp="1598551233692">
+    <state x="100" y="212" width="490" height="559" key="#xdebugger.evaluate" timestamp="1599592350719">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="100" y="212" width="490" height="559" key="#xdebugger.evaluate/0.0.1680.1020@0.0.1680.1020" timestamp="1598551233692" />
+    <state x="100" y="212" width="490" height="559" key="#xdebugger.evaluate/0.0.1680.1020@0.0.1680.1020" timestamp="1599592350719" />
     <state width="413" height="466" key="DebuggerActiveHint" timestamp="1597069401525">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -374,38 +394,38 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="620" y="203" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1598561892538" />
-    <state width="1637" height="198" key="GridCell.Tab.0.bottom" timestamp="1599509444719">
+    <state width="1637" height="342" key="GridCell.Tab.0.bottom" timestamp="1599592223296">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="198" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1599509444719" />
-    <state width="1637" height="198" key="GridCell.Tab.0.center" timestamp="1599509444718">
+    <state width="1637" height="342" key="GridCell.Tab.0.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1599592223296" />
+    <state width="1637" height="342" key="GridCell.Tab.0.center" timestamp="1599592223296">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="198" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1599509444718" />
-    <state width="1637" height="198" key="GridCell.Tab.0.left" timestamp="1599509444718">
+    <state width="1637" height="342" key="GridCell.Tab.0.center/0.0.1680.1020@0.0.1680.1020" timestamp="1599592223296" />
+    <state width="1637" height="342" key="GridCell.Tab.0.left" timestamp="1599592223296">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="198" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1599509444718" />
-    <state width="1637" height="198" key="GridCell.Tab.0.right" timestamp="1599509444719">
+    <state width="1637" height="342" key="GridCell.Tab.0.left/0.0.1680.1020@0.0.1680.1020" timestamp="1599592223296" />
+    <state width="1637" height="342" key="GridCell.Tab.0.right" timestamp="1599592223296">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="198" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1599509444719" />
-    <state width="1637" height="342" key="GridCell.Tab.1.bottom" timestamp="1598565041256">
+    <state width="1637" height="342" key="GridCell.Tab.0.right/0.0.1680.1020@0.0.1680.1020" timestamp="1599592223296" />
+    <state width="1637" height="342" key="GridCell.Tab.1.bottom" timestamp="1599592225692">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="342" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1598565041256" />
-    <state width="1637" height="342" key="GridCell.Tab.1.center" timestamp="1598565041256">
+    <state width="1637" height="342" key="GridCell.Tab.1.bottom/0.0.1680.1020@0.0.1680.1020" timestamp="1599592225692" />
+    <state width="1637" height="342" key="GridCell.Tab.1.center" timestamp="1599592225692">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="342" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1598565041256" />
-    <state width="1637" height="342" key="GridCell.Tab.1.left" timestamp="1598565041256">
+    <state width="1637" height="342" key="GridCell.Tab.1.center/0.0.1680.1020@0.0.1680.1020" timestamp="1599592225692" />
+    <state width="1637" height="342" key="GridCell.Tab.1.left" timestamp="1599592225691">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="342" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1598565041256" />
-    <state width="1637" height="342" key="GridCell.Tab.1.right" timestamp="1598565041256">
+    <state width="1637" height="342" key="GridCell.Tab.1.left/0.0.1680.1020@0.0.1680.1020" timestamp="1599592225691" />
+    <state width="1637" height="342" key="GridCell.Tab.1.right" timestamp="1599592225692">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state width="1637" height="342" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1598565041256" />
+    <state width="1637" height="342" key="GridCell.Tab.1.right/0.0.1680.1020@0.0.1680.1020" timestamp="1599592225692" />
     <state x="783" y="248" key="NewModule_or_Project.wizard" timestamp="1595794706824">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -426,10 +446,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state width="848" height="518" key="XDebugger.FullValuePopup/0.0.1680.1020@0.0.1680.1020" timestamp="1596834039218" />
-    <state x="158" y="99" key="com.intellij.ide.util.TipDialog" timestamp="1599504696436">
+    <state x="158" y="99" key="com.intellij.ide.util.TipDialog" timestamp="1599589362423">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
-    <state x="158" y="99" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1599504696436" />
+    <state x="158" y="99" key="com.intellij.ide.util.TipDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1599589362423" />
     <state x="862" y="251" width="540" height="497" key="extract.method.dialog" timestamp="1597871851164">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
